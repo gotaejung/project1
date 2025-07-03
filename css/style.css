@@ -11,8 +11,10 @@
   width: 1920px;
   height: 1810px;
   position: relative;
-  margin: 0 auto; /* 중앙 정렬 */
-  min-width: 1920px; /* 최소 너비, 필요시 조정 */
+  margin: 0 auto;
+  /* 중앙 정렬 */
+  min-width: 1920px;
+  /* 최소 너비, 필요시 조정 */
 }
 
 .screen .footer {
@@ -1781,4 +1783,31 @@
   left: 964px;
   position: absolute;
   object-fit: cover;
+}
+
+
+.popup {
+  position: fixed;
+  width: 420px;
+  height: 250px;
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+  font-size: 24px;
+  z-index: 999;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 100px;
+  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.5);
+  line-height: 1.75;
+}
+
+button {
+  display: block;
+  padding: 8px 16px;
+  border-radius: 8px;
+  position: absolute;
+  top: 190px;
+  right: 20px;
 }
