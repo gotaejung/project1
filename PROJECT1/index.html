@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport"
+        content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0, user-scalable=yes" />
+    <meta name="description" content="노후된 UI/UX를 개선하고 접근성을 높이기 위해 리디자인한 공공기관 웹사이트 프로젝트입니다. 반응형 디자인과 정보 구조를 최적화했습니다.">
+    <meta name="keywords" content="공공기관 웹사이트, 리디자인, UX 개선, 접근성 향상, 반응형 웹, 웹 표준, 웹 퍼블리싱, HTML, CSS, Figma, 포트폴리오">
+    <meta name="author" content="고태정">
+    <meta property="og:title" content="하남시청 메인페이지 리디자인 프로젝트">
+    <meta property="og:url" content="https://gotaejung.github.io/project1/">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="img/og-card.png">
+    <meta property="og:site_name" content="하남시청 리디자인 프로젝트">
+
+    <link rel="stylesheet" type="text/css" href="css/font.css" />
+    <link rel="stylesheet" type="text/css" href="css/layout1.css">
+    <link rel="stylesheet" type="text/css" href="css/default.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+
+    <link rel="stylesheet" href="css/common2.css">
+    <link rel="stylesheet" href="css/main_new.css">
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
+    <link rel="stylesheet" href="css/reset_main.css">
+
+    <link rel="stylesheet" href="css/main2.css">
+    <link rel="stylesheet" href="css/common3.css">
+
+
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/jquery.easing.1.3.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/layout.js"></script>
+
+    <style>
+        .popup {
+            width: 420px;
+            height: 250px;
+            background-color: white;
+            border-radius: 20px;
+            padding: 20px;
+            box-sizing: border-box;
+            box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.5);
+            font-size: 24px;
+            line-height: 1.75;
+            position: fixed;
+            z-index: 999;
+            top: 100px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        button {
+            display: block;
+            padding: 8px 16px;
+            border-radius: 8px;
+            position: absolute;
+            top: 190px;
+            right: 20px;
+        }
+    </style>
+
+    <title>하남시청</title>
+
+</head>
+
+<body>
+    <div class="popup">
+        해당 사이트는 학습용으로 제작되었으며 하남시청과 무관합니다.
+        구직용 포트폴리오로 상업적 목적이 없음을 알립니다.
+        <button>닫기</button>
+    </div>
+    <div id="wrapper">
+        <header id="header">
+            <div class="gnb">
+                <div class="wrap clearfix">
+                    <div class="site">
+                        <ul class="site_list clearfix">
+                            <li class="site_item n1"><a href="/sotong/index.do " target="_blank" title="새창"
+                                    rel="noopener noreferrer" class="site_anchor">시민소통누리집</a></li>
+                            <li class="site_item n2"><a href="/cleanh/index.do" target="_blank" title="새창"
+                                    rel="noopener noreferrer" class="site_anchor">청정하남</a></li>
+                            <li class="site_item n3"><a href="/photo/index.do" target="_blank" title="새창"
+                                    rel="noopener noreferrer" class="site_anchor">포토하남</a></li>
+                            <li class="site_item n4"><a href="/health/index.do" target="_blank" title="새창"
+                                    rel="noopener noreferrer" class="site_anchor">보건소</a></li>
+                            <li class="site_item n5"><a href="/jumin/index.do" target="_blank" title="새창"
+                                    rel="noopener noreferrer" class="site_anchor">행정복지센터</a></li>
+                            <li class="site_item n6"><a href="http://council.hanam.go.kr" target="_blank" title="새창"
+                                    rel="noopener noreferrer" class="site_anchor">의회</a></li>
+                            <li class="site_item n7"><a href="https://www.hanamlib.go.kr" target="_blank" title="새창"
+                                    rel="noopener noreferrer" class="site_anchor">시립도서관</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="link">
+                        <ul class="link_list clearfix">
+                            <li class="link_item user">
+                                <ul class="user_list">
+                                    <li class="user_item logout"><a href="/www/loginView.do" class="user_anchor">로그인</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="link_item sitemap">
+                                <a href="/www/sub.do?key=457" class="sitemap_anchor">누리집맵</a>
+                            </li>
+                            <li class="link_item language">
+                                <button type="button" class="language_button">GLOBAL</button>
+                                <div class="language_panel" style="display: none;">
+                                    <ul class="language_list">
+                                        <li class="language_item active"><a href="/www/index.do"
+                                                class="language_anchor">KOREAN</a></li>
+                                        <li class="language_item"><a href="/english/index.do"
+                                                class="language_anchor">ENGLISH</a></li>
+                                        <li class="language_item"><a href="/japan/index.do"
+                                                class="language_anchor">JAPANESE</a></li>
+                                        <li class="language_item"><a href="/china/index.do"
+                                                class="language_anchor">CHINESE</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="link_item fz_change">
+                                <span class="title">글자크기</span>
+                                <ul class="list clearfix">
+                                    <li class="plus"><button type="button" onclick="Zoom.exec(1); return false;">글자
+                                            크게</button></li>
+                                    <li class="minus"><button type="button" onclick="Zoom.exec(-1); return false;">글자
+                                            작게</button></li>
+                                    <li class="reset"><button type="button" onclick="Zoom.exec(0); return false;">글자 크기
+                                            원래대로</button></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="lnb" class="lnb length6">
+                <div class="user">
+                    <ul class="user_list">
+                        <li class="user_item login"><a href="/www/loginView.do" class="user_anchor">로그인</a></li>
+                    </ul>
+                </div>
+
+                <div class="menu_show">
+                    <button type="button" class="menu_btn">주메뉴 열기</button>
+                </div>
+
+                <nav class="menu after eachdown init" style="">
+                    <h2 class="skip">주메뉴</h2>
+
+                    <div class="menu_header">
+                        <div class="link">
+                            <ul class="link_list">
+                                <li class="link_item welfare"><a href="/site/www/service.html"
+                                        class="welfare_anchor">맞춤복지</a></li>
+                                <li class="link_item language">
+                                    <button type="button" class="language_button">GLOBAL</button>
+                                    <div class="language_panel" style="display: none;">
+                                        <ul class="language_list">
+                                            <li class="language_item active"><a href="/www/index.do"
+                                                    class="language_anchor">KOREAN</a></li>
+                                            <li class="language_item"><a href="/english/index.do"
+                                                    class="language_anchor">ENGLISH</a></li>
+                                            <li class="language_item"><a href="/japan/index.do"
+                                                    class="language_anchor">JAPANESE</a></li>
+                                            <li class="language_item"><a href="/china/index.do"
+                                                    class="language_anchor">CHINESE</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="wrap">
+                        <div class="depth depth1">
+                            <ul class="depth_list depth1_list cut">
+                                <li class="depth_item depth1_item n1 has">
+                                    <a href="/www/contents.do?key=7023" target="_self"
+                                        class="depth_text depth1_text">종합민원</a>
+                                    <div class="depth depth2">
+                                        <div class="depth2_content">
+                                            <ul class="depth_list depth2_list cut">
+                                                <li class="depth_item depth2_item has">
+                                                    <a href="/www/contents.do?key=7023" target="_self"
+                                                        class="depth_text depth2_text">일반민원</a>
+                                                    <div class="depth depth3">
+                                                        <ul class="depth_list depth3_list">
+                                                            <li class="depth_item depth3_item">
+                                                                <a href="/www/contents.do?key=7023" target="_self"
+                                                                    class="depth_text depth3_text">민원신청</a>
+                                                            </li>
+                                                            <li class="depth_item depth3_item">
+                                                                <a href="/www/contents.do?key=7024" target="_self"
+                                                                    class="depth_text depth3_text">나의민원보기</a>
+                                                            </li>
+                                                            <li class="depth_item depth3_item">
+                                                                <a href="/www/contents.do?key=7025" target="_self"
+                                                                    class="depth_text depth3_text">(구)전자민원열람</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                                <li class="depth_item depth2_item has">
+                                                    <a href="/www/contents.do?key=101" target="_self"
+                                                        class="depth_text depth2_text">신고민원</a>
+                                                    <div class="depth depth3">
+                                                        <ul class="depth_list depth3_list">
+                                                            <li class="depth_item depth3_item">
+                                                                <a href="/www/contents.do?key=101" target="_self"
+                                                                    class="depth_text depth3_text">부패공익신고</a>
+                                                            </li>
+                                                            <li class="depth_item depth3_item has">
+                                                                <a href="/www/contents.do?key=102" target="_self"
+                                                                    class="depth_text depth3_text">소극행정신고</a>
+                                                                <div class="depth depth4">
+                                                                    <ul class="depth_list depth4_list">
+                                                                        <li class="depth_item depth4_item">
+                                                                        <li class="depth_item depth4_item">
+                                                                    </ul>
+                                                                </div>
+                                                            </li>
+                                                            <li class="depth_item depth3_item">
+                                                                <a href="/www/contents.do?key=3500" target="_self"
+                                                                    class="depth_text depth3_text">안전위험신고</a>
+                                                            </li>
+                                                            <li class="depth_item depth3_item has">
+                                                                <a href="/www/contents.do?key=90" target="_self"
+                                                                    class="depth_text depth3_text">환경문제신고</a>
+                                                                <div class="depth depth4">
+                                                                    <ul class="depth_list depth4_list">
+                                                                        <li class="depth_item depth4_item">
+                                                                        <li class="depth_item depth4_item">
+                                                                        <li class="depth_item depth4_item">
+                                                                    </ul>
+                                                                </div>
+                                                            </li>
+                                                            <li class="depth_item depth3_item has">
+                                                                <a href="/www/contents.do?key=478" target="_self"
+                                                                    class="depth_text depth3_text">불법중개행위신고</a>
+                                                                <div class="depth depth4">
+                                                                    <ul class="depth_list depth4_list">
+                                                                        <li class="depth_item depth4_item">
+                                                                        <li class="depth_item depth4_item">
+                                                                    </ul>
+                                                                </div>
+                                                            </li>
+                                                            <li class="depth_item depth3_item has">
+                                                                <a href="/www/contents.do?key=1580" target="_self"
+                                                                    class="depth_text depth3_text">토지거래허가이용목적위반신고</a>
+                                                                <div class="depth depth4">
+                                                                    <ul class="depth_list depth4_list">
+                                                                        <li class="depth_item depth4_item">
+                                                                        <li class="depth_item depth4_item">
+                                                                    </ul>
+                                                                </div>
+                                                            </li>
+                                                            <li class="depth_item depth3_item has">
+                                                                <a href="/www/contents.do?key=6700" target="_self"
+                                                                    class="depth_text depth3_text">아동권리침해신고</a>
+                                                                <div class="depth depth4">
+                                                                    <ul class="depth_list depth4_list">
+                                                                        <li class="depth_item depth4_item">
+                                                                        <li class="depth_item depth4_item">
+                                                                        <li class="depth_item depth4_item">
+                                                                    </ul>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                                <li class="depth_item depth2_item has">
+                                                    <a href="/www/contents.do?key=11694" target="_self"
+                                                        class="depth_text depth2_text">상담예약민원</a>
+                                                    <div class="depth depth3">
+                                                        <ul class="depth_list depth3_list">
+                                                            <li class="depth_item depth3_item has">
+                                                                <a href="/www/contents.do?key=11694" target="_self"
+                                                                    class="depth_text depth3_text">무료법률상담</a>
+                                                                <div class="depth depth4">
+                                                                    <ul class="depth_list depth4_list">
+                                                                        <li class="depth_item depth4_item">
+                                                                        <li class="depth_item depth4_item">
+                                                                        <li class="depth_item depth4_item">
+                                                                    </ul>
+                                                                </div>
+                                                            </li>
+                                                            <li class="depth_item depth3_item has">
+                                                                <a href="/www/contents.do?key=8185" target="_self"
+                                                                    class="depth_text depth3_text">시민고충처리위원회</a>
+                                                                <div class="depth depth4">
+                                                                    <ul class="depth_list depth4_list">
+                                                                    </ul>
+                                                                </div>
+                                                            </li>
+                                                            <li class="depth_item depth3_item has">
+                                                                <a href="/www/contents.do?key=4444" target="_self"
+                                                                    class="depth_text depth3_text">지방세납세자보호</a>
+                                                                <div class="depth depth4">
+                                                                    <ul class="depth_list depth4_list">
+                                                                    </ul>
+                                                                </div>
+                                                            </li>
+                                                            <li class="depth_item depth3_item">
+                                                                <a href="/www/bldgRevRsvn/calendar.do?key=48"
+                                                                    target="_self"
+                                                                    class="depth_text depth3_text">건축심의예약</a>
+                                                            </li>
+                                                            <li class="depth_item depth3_item">
+                                                                <a href="/www/contents.do?key=106" target="_self"
+                                                                    class="depth_text depth3_text">기업SOS지원센터</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                                <li class="depth_item depth2_item">
+                                                    <a href="/www/contents.do?key=7021" target="_self"
+                                                        class="depth_text depth2_text">정부24(온라인
+                                                        민원발급)</a>
+                                                </li>
+                                                <li class="depth_item depth2_item">
+                                                    <a href="/www/contents.do?key=7026" target="_blank"
+                                                        class="depth_text depth2_text">민원처리공개</a>
+                                                </li>
+                                                <li class="depth_item depth2_item">
+                                                    <a href="/www/selectBbsNttList.do?bbsNo=22&amp;key=72"
+                                                        target="_self" class="depth_text depth2_text">민원편람/서식</a>
+                                                </li>
+                                                <li class="depth_item depth2_item has">
+                                                    <a href="/www/contents.do?key=7060" target="_self"
+                                                        class="depth_text depth2_text">민원안내</a>
+                                                    <div class="depth depth3">
+                                                        <ul class="depth_list depth3_list">
+                                                            <li class="depth_item depth3_item">
+                                                                <a href="/www/contents.do?key=7060" target="_self"
+                                                                    class="depth_text depth3_text">민원실</a>
+                                                            </li>
+                                                            <li class="depth_item depth3_item">
+                                                                <a href="/www/contents.do?key=4020" target="_self"
+                                                                    class="depth_text depth3_text">콜센터</a>
+                                                            </li>
+                                                            <li class="depth_item depth3_item">
+                                                                <a href="/www/contents.do?key=92" target="_self"
+                                                                    class="depth_text depth3_text">무인민원발급기</a>
+                                                            </li>
+                                                            <li class="depth_item depth3_item has">
+                                                                <a href="/www/contents.do?key=8684" target="_self"
+                                                                    class="depth_text depth3_text">민원수수료</a>
+                                                                <div class="depth depth4">
+                                                                    <ul class="depth_list depth4_list">
+                                                                    </ul>
+                                                                </div>
+                                                            </li>
+                                                            <li class="depth_item depth3_item">
+                                                                <a href="/www/contents.do?key=93" target="_self"
+                                                                    class="depth_text depth3_text">여권
+                                                                    발급</a>
+                                                            </li>
+                                                            <li class="depth_item depth3_item has">
+                                                                <a href="/www/contents.do?key=6750" target="_self"
+                                                                    class="depth_text depth3_text">가족관계등록신고</a>
+                                                                <div class="depth depth4">
+                                                                    <ul class="depth_list depth4_list">
+                                                                    </ul>
+                                                                </div>
+                                                            </li>
+                                                            <li class="depth_item depth3_item">
+                                                                <a href="/www/contents.do?key=60" target="_self"
+                                                                    class="depth_text depth3_text">행정서비스헌장</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                                <li class="depth_item depth2_item has">
+                                                    <a href="/www/ticketView.do?key=13217&amp;insttSe=INSTTSE01"
+                                                        target="_self" class="depth_text depth2_text">민원편의제도</a>
+                                                    <div class="depth depth3">
+                                                        <ul class="depth_list depth3_list">
+                                                            <li class="depth_item depth3_item has">
+                                                                <a href="/www/ticketView.do?key=13217&amp;insttSe=INSTTSE01"
+                                                                    target="_self" class="depth_text depth3_text">온라인번호표
+                                                                    발급(대기현황)</a>
+                                                                <div class="depth depth4">
+                                                                    <ul class="depth_list depth4_list">
+                                                                    </ul>
+                                                                </div>
+                                                            </li>
+                                                            <li class="depth_item depth3_item has">
+                                                                <a href="/www/contents.do?key=8824" target="_self"
+                                                                    class="depth_text depth3_text">원스톱서비스</a>
+                                                                <div class="depth depth4">
+                                                                    <ul class="depth_list depth4_list">
+                                                                    </ul>
+                                                                </div>
+                                                            </li>
+                                                            <li class="depth_item depth3_item">
+                                                                <a href="/www/contents.do?key=64" target="_self"
+                                                            </li>
+                                                            <li class="depth_item depth3_item">
+                                                                <a href="/www/contents.do?key=67" target="_self"
+                                                            </li>
+                                                            <li class="depth_item depth3_item">
+                                                                <a href="/www/contents.do?key=2176" target="_self"
+                                                            </li>
+                                                            <li class="depth_item depth3_item has">
+                                                                <a href="/www/contents.do?key=66" target="_self"
+                                                                    class="depth_text depth3_text">민원전문상담관제</a>
+                                                                <div class="depth depth4">
+                                                                </div>
+                                                            </li>
+                                                            <li class="depth_item depth3_item has">
+                                                                <a href="/www/contents.do?key=7840" target="_self"
+                                                                    상담예약</a>
+                                                                <div class="depth depth4">
+                                                                </div>
+                                                            </li>
+                                                            <li class="depth_item depth3_item">
+                                                                <a href="/www/contents.do?key=7080" target="_self"
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                                <li class="depth_item depth2_item">
+                                                    <a href="/www/selectBbsNttList.do?bbsNo=88&amp;key=1113"
+                                                        target="_self" class="depth_text depth2_text">민원만족도평가결과</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="depth_item depth1_item n2 has">
+                                    <a href="/www/selectBbsNttList.do?bbsNo=62&amp;key=110" target="_self"
+                                        class="depth_text depth1_text">시민참여</a>
+                                    <div class="depth depth2">
+                                        <div class="depth2_content">
+                                            <ul class="depth_list depth2_list cut">
+                                                <li class="depth_item depth2_item has">
+                                                    <a href="/www/selectBbsNttList.do?bbsNo=62&amp;key=110"
+                                                        target="_self" class="depth_text depth2_text">시민참여마당</a>
+                                                    <div class="depth depth3">
+                                                        <ul class="depth_list depth3_list">
+                                                            <li class="depth_item depth3_item">
+                                                                <a href="/www/selectBbsNttList.do?bbsNo=62&amp;key=110"
+                                                            </li>
+                                                            <li class="depth_item depth3_item">
+                                                                <a href="/www/selectBbsNttList.do?bbsNo=63&amp;key=116"
+                                                            </li>
+                                                            <li class="depth_item depth3_item has">
+                                                                <a href="/www/contents.do?key=124" target="_self"
+                                                                    class="depth_text depth3_text">누리집개선요청</a>
+                                                                <div class="depth depth4">
+                                                                </div>
+                                                            </li>
+                                                            <li class="depth_item depth3_item">
+                                                                <a href="/www/contents.do?key=8164" target="_self"
+                                                            </li>
+                                                            <li class="depth_item depth3_item">
+                                                                <a href="/www/selectUnivJobWebList.do?key=8445"
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                                <li class="depth_item depth2_item has">
+                                                    <a href="/www/selectBbsNttList.do?bbsNo=11&amp;key=47"
+                                                        target="_self" class="depth_text depth2_text">주민참여예산/결산</a>
+                                                    <div class="depth depth3">
+                                                        <ul class="depth_list depth3_list">
+                                                            <li class="depth_item depth3_item">
+                                                                <a href="/www/selectBbsNttList.do?bbsNo=11&amp;key=47"
+                                                            </li>
+                                                            <li class="depth_item depth3_item">
+                                                                <a href="/www/selectBbsNttList.do?bbsNo=1864&amp;key=6720"
+                                                            </li>
+                                                            <li class="depth_item depth3_item">
+                                                                <a href="/www/selectBbsNttList.do?bbsNo=13&amp;key=49"
+                                                            </li>
+                                                            <li class="depth_item depth3_item">
+                                                                <a href="/www/partcptnBudgetList.do?key=6244"
+                                                            </li>
+                                                            <li class="depth_item depth3_item">
+                                                                <a href="/www/myPartcptnBudgetList.do?key=6245"
+                                                            </li>
+                                                            <li class="depth_item depth3_item">
+                                                                <a href="https://www.lofin365.go.kr/?bbsCd=FSL1002"
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                                <li class="depth_item depth2_item has">
+                                                    <a href="/www/contents.do?key=112" target="_self"
+                                                        class="depth_text depth2_text">시민제안</a>
+                                                    <div class="depth depth3">
+                                                        <ul class="depth_list depth3_list">
+                                                            <li class="depth_item depth3_item">
+                                                                <a href="/www/contents.do?key=112" target="_self"
+                                                            </li>
+                                                            <li class="depth_item depth3_item">
+                                                                <a href="/www/selectBbsNttList.do?bbsNo=64&amp;key=113"
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                                <li class="depth_item depth2_item has">
+                                                    <a href="/www/selectBbsNttList.do?bbsNo=1344&amp;key=6080"
+                                                        target="_self" class="depth_text depth2_text">내고장 적극행정</a>
+                                                    <div class="depth depth3">
+                                                        <ul class="depth_list depth3_list">
+                                                            <li class="depth_item depth3_item">
+                                                                <a href="/www/selectBbsNttList.do?bbsNo=1344&amp;key=6080"
+                                                            </li>
+                                                            <li class="depth_item depth3_item">
+                                                                <a href="/www/contents.do?key=6081" target="_blank"
+                                                            </li>
+                                                            <li class="depth_item depth3_item">
+                                                                <a href="/www/contents.do?key=6082" target="_blank"
+                                                            </li>
+                                                            <li class="depth_item depth3_item">
+                                                                <a href="/www/contents.do?key=6083" target="_blank"
+                                                            </li>
+                                                            <li class="depth_item depth3_item">
+                                                                <a href="/www/contents.do?key=6301" target="_blank"
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                                <li class="depth_item depth2_item has">
+                                                    <a href="/www/contents.do?key=756" target="_self"
+                                                        class="depth_text depth2_text">예산낭비신고센터</a>
+                                                    <div class="depth depth3">
+                                                        <ul class="depth_list depth3_list">
+                                                            <li class="depth_item depth3_item">
+                                                                <a href="/www/contents.do?key=756" target="_self"
+                                                            </li>
+                                                            <li class="depth_item depth3_item">
+                                                            <li class="depth_item depth3_item">
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                                <li class="depth_item depth2_item has">
+                                                    <a href="/www/contents.do?key=104" target="_self"
+                                                        class="depth_text depth2_text">규제개혁신고센터</a>
+                                                    <div class="depth depth3">
+                                                        <ul class="depth_list depth3_list">
+                                                            <li class="depth_item depth3_item">
+                                                            <li class="depth_item depth3_item">
+                                                            <li class="depth_item depth3_item">
+                                                            <li class="depth_item depth3_item">
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="depth_item depth1_item n3 has">
+                                    <a href="/www/contents.do?key=6120" target="_self"
+                                        class="depth_text depth1_text">정보공개</a>
+                                    <div class="depth depth2">
+                                        <div class="depth2_content">
+                                            <ul class="depth_list depth2_list cut">
+                                                <li class="depth_item depth2_item has">
+                                                    <a href="/www/contents.do?key=6120" target="_self"
+                                                        class="depth_text depth2_text">공공데이터</a>
+                                                    <div class="depth depth3">
+                                                        <ul class="depth_list depth3_list">
+                                                            <li class="depth_item depth3_item">
+                                                            <li class="depth_item depth3_item">
+                                                            <li class="depth_item depth3_item">
+                                                            <li class="depth_item depth3_item">
+                                                            <li class="depth_item depth3_item">
+                                                            <li class="depth_item depth3_item">
+                                                            <li class="depth_item depth3_item">
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                                <li class="depth_item depth2_item has">
+                                                    <a href="/www/contents.do?key=5" target="_self"
+                                                        class="depth_text depth2_text">행정정보</a>
+                                                    <div class="depth depth3">
+                                                        <ul class="depth_list depth3_list">
+                                                            <li class="depth_item depth3_item has">
+                                                            </li>
+                                                            <li class="depth_item depth3_item">
+                                                            <li class="depth_item depth3_item has">
+                                                            </li>
+                                                            <li class="depth_item depth3_item has">
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                                <li class="depth_item depth2_item has">
+                                                    <a href="/www/selectBbsNttList.do?bbsNo=7&amp;key=42" target="_self"
+                                                        class="depth_text depth2_text">예산/결산</a>
+                                                    <div class="depth depth3">
+                                                        <ul class="depth_list depth3_list">
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                                <li class="depth_item depth2_item">
+                                                    <a href="/www/selectBbsNttList.do?bbsNo=15&amp;key=51"
+                                                        target="_self" class="depth_text depth2_text">업무추진비</a>
+                                                </li>
+                                                <li class="depth_item depth2_item has">
+                                                    <a href="/www/contents.do?key=32" target="_self"
+                                                        class="depth_text depth2_text">지방공기업</a>
+                                                    <div class="depth depth3">
+                                                        <ul class="depth_list depth3_list">
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                                <li class="depth_item depth2_item has wide">
+                                                    <a href="/www/contents.do?key=3413" target="_self"
+                                                        class="depth_text depth2_text">계약정보</a>
+                                                    <div class="depth depth3">
+                                                        <ul class="depth_list depth3_list">
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                                <li class="depth_item depth2_item has wide">
+                                                    <a href="/www/selectBbsNttList.do?bbsNo=18&amp;key=55"
+                                                        target="_self" class="depth_text depth2_text">통계정보</a>
+                                                    <div class="depth depth3">
+                                                    </div>
+                                                </li>
+                                                <li class="depth_item depth2_item has">
+                                                    <a href="https://www.law.go.kr/LSW/main.html" target="_self"
+                                                        class="depth_text depth2_text">법령정보</a>
+                                                    <div class="depth depth3">
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="depth_item depth1_item n4 has">
+                                    <a href="/www/contents.do?key=168" target="_self"
+                                        class="depth_text depth1_text">하남소식</a>
+                                    <div class="depth depth2">
+                                        <div class="depth2_content">
+                                            <ul class="depth_list depth2_list cut">
+                                                <li class="depth_item depth2_item has">
+                                                    <a href="/www/contents.do?key=168" target="_self"
+                                                        class="depth_text depth2_text">열린시정</a>
+                                                    <div class="depth depth3">
+                                                    </div>
+                                                </li>
+                                                <li class="depth_item depth2_item has">
+                                                </li>
+                                                <li class="depth_item depth2_item">
+                                                <li class="depth_item depth2_item has">
+                                                </li>
+                                                <li class="depth_item depth2_item has">
+                                                </li>
+                                                <li class="depth_item depth2_item">
+                                                <li class="depth_item depth2_item has">
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="depth_item depth1_item n5 has">
+                                    <a href="/www/selectEmplWebList.do?key=158" target="_self"
+                                        class="depth_text depth1_text">하남소개</a>
+                                    <div class="depth depth2">
+                                        <div class="depth2_content">
+                                            <ul class="depth_list depth2_list cut">
+                                                <li class="depth_item depth2_item has">
+                                                </li>
+                                                <li class="depth_item depth2_item has">
+                                                </li>
+                                                <li class="depth_item depth2_item has">
+                                                </li>
+                                                <li class="depth_item depth2_item">
+                                                <li class="depth_item depth2_item">
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="depth_item depth1_item n6 has">
+                                    <a href="/www/contents.do?key=6680" target="_self"
+                                        class="depth_text depth1_text">분야별정보</a>
+                                    <div class="depth depth2">
+                                        <div class="depth2_content">
+                                            <div class="depth2_info">
+                                            </div>
+                                            <ul class="depth_list depth2_list cut">
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+</html>
