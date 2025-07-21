@@ -27,7 +27,7 @@ select, input{font-size: 16px}
 
 
 /* 서울시 메인 - 메인슬라이드 우측영역*/
-.inner_wrap{width:1152px; margin:auto; box-sizing:border-box;}
+.inner_wrap{width:1400px; margin:auto; box-sizing:border-box;}
 .inner_wrap > div:after, .inner_wrap > section:after{content:''; display:block; clear:both;}
 .inner1{height:350px; overflow: hidden; margin-bottom: 30px}
 .inner1 .slide{width:770px; float:left; position:relative;}
@@ -35,7 +35,7 @@ select, input{font-size: 16px}
 
 body.citizen .inner1 .slide_content1 {margin-top: -350px;}
 /* slide tab 2019 */
-.ico_main {display: inline-block;background: url(../images/main/icon_main_2019.png) no-repeat 0 0;}
+.ico_main {display: inline-block;background: url(/img/icon_main_2019.png) no-repeat 0 0;}
 /* .inner1 .slide_tab {position: absolute;top: 0;left: 0;width: 80px;height: 350px;} */
 .inner1 .slide_content  h3 {position: absolute;top: 0;left: 0;width: 80px;height: 175px}
 .inner1 .slide_content2 h3 {top: 176px;}
@@ -99,7 +99,7 @@ margin-top: -25px;
 .banner-all-wrap h4 {color: #fff;font-size: 30px;}
 .banner-wrap {padding: 0 0 20px;background: url(../images/main/bannerAll-title-bg.png) no-repeat 50% 0;}
 .banner-wrap h5 {padding: 70px 0 20px;text-align: center;}
-.banner-all {display: flex;flex-direction: column;width: 100%;max-width: 1152px;margin: 0 auto; box-sizing: content-box}
+.banner-all {display: flex;flex-direction: column;width: 100%;max-width: 1400px;margin: 0 auto; box-sizing: content-box}
 .banner-list {display: flex;flex-wrap: wrap;gap: 10px}
 .banner-list li {width: calc(50% - 5px)}
 .banner-list li a {display: flex;}
@@ -112,7 +112,7 @@ margin-top: -25px;
 
 /* 소셜시장실 new */
 .inner1 .m_right {float: right;width: 360px;}
-.inner1 .m_mayor_wrap {float: right;width: 360px;height: 350px;}
+.inner1 .m_mayor_wrap {float: right;width: 600px;height: 350px;}
 .inner1 .m_mayor {position: relative;height: 230px;margin-bottom: 10px;background: url(../images/main/img_mayor_2019_2.jpg) no-repeat 0 0;}
 
 .inner1 .m_mayor a {position: relative;display: block;width: 100%;height: 230px;}
@@ -146,7 +146,7 @@ margin-top: -25px;
 
 /* 온라인시장실 버튼 추가 2023-02-13 */
 .mayor-area-2023 {position: relative;margin-top: 7px;}
-.mayor-area-2023 .links-area {display: flex;justify-content: space-between;position: absolute;width: 100%;left: 0;bottom: 0;z-index: 1;height: 26px;}
+.mayor-area-2023 .links-area {display: flex;justify-content: space-between;position: absolute;width: 100%;left: 0;bottom: 0;z-index: 1;height: 90px;}
 .mayor-area-2023 .links-area a {display: flex;align-items: center;justify-content: center;width: calc(25% - 1px);height: 100%;background-color: #8b7153;}
 .mayor-area-2023 .links-area a:focus-visible {width: calc(25% - 6px);}
 .mayor-area-2023 a.link2 {position: absolute;top: 18px;right: 14px;}
@@ -178,11 +178,12 @@ margin-top: -25px;
 
 /* 시장실영역 하단에 카톡채널, SNS추가 2023-08-30 */
 .mayor-news-231110 {margin: 0 0 10px;}
-.mayor-news-231110 .mayor-news {height: 190px}
+.mayor-news-231110 .mayor-news {height: 250px}
 .traffic-banner {display: none;}
 
+
 /* 문자알림서비스 추가 2024-07-08  지우면 안됨*/
-.sns-right-area {display: flex;justify-content: space-between;margin-top: 10px;}
+/* .sns-right-area {display: flex;justify-content: space-between;margin-top: 10px;} */
 
 
 
@@ -262,17 +263,15 @@ margin-top: -25px;
 
 /* 교통량 사이드 배너 추가 2020-08-10  */
 .side_banner_new {}
-.side_banner_new .img {overflow: visible;height: 230px;}
+.side_banner_new .img {overflow: visible; height: 230px;}
 .s_banner_wrap > .img > a:focus-visible img {outline: 1px dotted #000;}
 
 
 /* 시장실 기본 */
-.mayor-area-2025 a.link1 {display: block;width: 360px;height: 90px;background: url(../images/main/img-mayor-intro.png) no-repeat 0 0}
+.mayor-area-2025 a.link1 {display: block;width: 360px; height: 90px;background: url(../images/main/img-mayor-intro.png) no-repeat 0 0}
 .mayor-area-2025 a.link1 img {position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); border: 0;}
 .mayor-area-2025 a.link2 {display: block;width: 110px;height: 30px;background: url(../images/main/btn-mayorlink0.png) no-repeat 0 0}
-.mayor-area-2025 .links-area a.btn-links1 {background: #8b7153 url(../images/main/btn-mayorlink1.png) no-repeat 50% 50%}
-.mayor-area-2025 .links-area a.btn-links2 {background: #8b7153 url(../images/main/btn-mayorlink2.png) no-repeat 50% 50%}
-.mayor-area-2025 .links-area a.btn-links3 {background: #8b7153 url(../images/main/btn-mayorlink3.png) no-repeat 50% 50%}
-.mayor-area-2025 .links-area a.btn-links4 {background: #8b7153 url(../images/main/btn-mayorlink4.png) no-repeat 50% 50%}
-
-
+.mayor-area-2025 .links-area a.btn-links1 {background: #8b7153 url(/img/1.png) no-repeat 50% 50%}
+.mayor-area-2025 .links-area a.btn-links2 {background: #8b7153 url(/img/2.png) no-repeat 50% 50%}
+.mayor-area-2025 .links-area a.btn-links3 {background: #8b7153 url(/img/3.png) no-repeat 50% 50%}
+.mayor-area-2025 .links-area a.btn-links4 {background: #8b7153 url(/img/4.png) no-repeat 50% 50%}

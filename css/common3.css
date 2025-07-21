@@ -70,7 +70,8 @@ a,abbr,address,article,aside,audio,body,canvas,caption,cite,dd,details,div,dl,dt
     padding: 0;
     border: 0;
     vertical-align: baseline;
-    font-family: '맑은고딕','Malgun Gothic',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol",AppleGothic,Dotum,arial,sans-serif
+    font-family: 'pretendard'
+    /* '맑은고딕','Malgun Gothic',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol",AppleGothic,Dotum,arial,sans-serif */
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -89,10 +90,11 @@ body,html {
     height: 100%;
     margin: 0;
     padding: 0;
-    font-family: '맑은고딕','Malgun Gothic',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol",AppleGothic,Dotum,arial,sans-serif;
+    font-family: 'pretendard'
+/*     '맑은고딕','Malgun Gothic',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol",AppleGothic,Dotum,arial,sans-serif;
     font-size: 15px;
     line-height: 1.5;
-    letter-spacing: .01em
+    letter-spacing: .01em */
 }
 
 a,body,button,input,label,span {
@@ -105,9 +107,10 @@ blockquote,dd,dl,dt,fieldset,form,h1,h2,h3,h4,h5,h6,input,li,ol,p,pre,textarea,u
 }
 
 input,select,td,textarea,th {
-    font-family: '맑은고딕','Malgun Gothic',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol",AppleGothic,Dotum,arial,sans-serif;
+    font-family: 'pretendard'
+    /* '맑은고딕','Malgun Gothic',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol",AppleGothic,Dotum,arial,sans-serif; */
     font-size: 15px;
-    color: #494949
+    color: #494949;
 }
 
 table {
@@ -253,7 +256,8 @@ input[type=checkbox],input[type=radio] {
 }
 
 a {
-    font-family: '맑은고딕','Malgun Gothic',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol",AppleGothic,Dotum,arial,sans-serif
+    font-family: 'pretendard'
+    /* '맑은고딕','Malgun Gothic',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol",AppleGothic,Dotum,arial,sans-serif */
 }
 
 a:active,a:hover {
@@ -377,7 +381,7 @@ a:active,a:hover {
     content: ""
 }
 
-.content_info__satisfaction .research strong {
+/* .content_info__satisfaction .research strong {
     display: block;
     position: relative;
     margin-bottom: 5px;
@@ -386,7 +390,7 @@ a:active,a:hover {
     font-size: 15px;
     font-family: nsr,'Malgun Gothic';
     font-weight: 600
-}
+} */
 
 .content_info__satisfaction .research strong:before {
     position: absolute;
@@ -926,4 +930,3 @@ label.flow {
     right: 10px;
     background: url(/images/home_renew/icn_blog2.png) no-repeat;
 }
-

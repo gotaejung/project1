@@ -10,7 +10,7 @@ html.oflow, body.oflow { position: fixed; width: 100%; overflow: hidden; height:
 
 #container > .inner { position:relative; z-index:0; background:url("../images/body_line.gif") repeat-y left top; overflow:hidden; }
 
-.inner { position: relative; width: 1152px; margin: 0 auto; min-width: 1152px; }
+.inner { position: relative; width: 1400px; margin: 0 auto; min-width: 1400px; }
 .inner:after { content: ''; display: block; clear: both;}
 
 /*스크린 리더 only*/
@@ -117,7 +117,7 @@ span.in-text { display: inline-block; width: 27px; text-align: center;color:#555
 
 
 /* layout */
-#wrap { position:relative; min-width: 1152px;}
+#wrap { position:relative; min-width: 1400px;}
 
 
 /* container */
@@ -189,5 +189,3 @@ body.cate {min-width: 100%}
 @media (max-width: 1151px) {
 	#divTestOnOff {position: fixed !important; bottom: 0;}
 }
-
-
