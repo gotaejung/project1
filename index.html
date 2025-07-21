@@ -19,6 +19,7 @@
     <link rel="stylesheet" type="text/css" href="css/layout1.css">
     <link rel="stylesheet" type="text/css" href="css/default.css">
     <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" href="css/main_layout.css">
 
     <link rel="stylesheet" href="css/common2.css">
     <link rel="stylesheet" href="css/main_new.css">
@@ -27,6 +28,8 @@
 
     <link rel="stylesheet" href="css/main2.css">
     <link rel="stylesheet" href="css/common3.css">
+
+
 
 
     <script src="js/jquery-1.12.4.min.js"></script>
@@ -68,12 +71,12 @@
 </head>
 
 <body>
-    <div class="popup">
+    <!--     <div class="popup">
         해당 사이트는 학습용으로 제작되었으며 하남시청과 무관합니다.
         구직용 포트폴리오로 상업적 목적이 없음을 알립니다.
         <button>닫기</button>
-    </div>
-    <div id="wrapper">
+    </div> -->
+    <div id="container">
         <header id="header">
             <div class="gnb">
                 <div class="wrap clearfix">
@@ -4224,6 +4227,7 @@
                                 </li>
                             </ul>
                         </div>
+
                         <!--<div class="sitemap_show">
 <a href="/www/sub.do?key=457" class="sitemap_anchor">사이트맵</a>
 </div>-->
@@ -4678,7 +4682,6 @@
 
         <div id="wrap" class="main">
             <div class="inner_wrap" id="inner_wrap">
-                <!-- inner1 -->
                 <!-- <div class="inner1"  style="position: relative; overflow: visible;"> -->
                 <div class="inner1">
                     <div class="slide slide-all" style="display: block;">
@@ -4782,8 +4785,7 @@
                                                     <a href="https://mediahub.seoul.go.kr/archives/2014987?utm_source=main_inner1&amp;utm_medium=banner&amp;utm_campaign=hotissue"
                                                         target="_blank" title="새창으로 이동"
                                                         onclick="fnMainHitClick('maintitle1','5091');">
-                                                        <img width="690" height="350"
-                                                            src="/upload/hotissue/90a6fcbefb7845289b818da94c23b2b8.jpg"
+                                                        <img width="690" height="350" src="/img/slide1-3.jpg"
                                                             alt="여름 감성 풀~ 충전! 하남의 공원 프로그램 모음.zip">
                                                         <p class="figcaption">여름 감성 풀~ 충전! 하남의 공원 프로그램 모음.zip</p>
                                                     </a>
@@ -5261,67 +5263,61 @@
                         <!--// 배너 전체보기 -->
                     </div>
 
-                    <!--// .slide -->
-
-
 
                     <div class="m_mayor_wrap s_banner_wrap side_banner_new">
-
                         <div class="mayor-news-area mayor-news-231110">
-                            <h3 class="sr-only">시장님 뉴스</h3>
+                            <div class="mayor">
+                                <h2 class="skip">열린시장실</h2>
+                                <span class="mayor_title">
+                                    <span class="mayor_slogan">
+                                        <img src="/img/mayor_title01.png" alt="살고싶은 도시, 도약하는 하남">
+                                    </span>
+                                    <span class="mayor_name">하남시장 <span>이현재</span>입니다.</span>
+                                </span>
+                                <ul class="mayor_link">
+                                    <li class="mayor_item"><a href="/mayor/contents.do?key=12556" target="_blank"
+                                            title="새창" rel="noopener noreferrer">신년사</a></li>
+                                    <li class="mayor_item"><a href="/mayor/index.do" target="_blank" title="새창"
+                                            rel="noopener noreferrer">열린시장실</a></li>
+                                    <li class="mayor_item"><a
+                                            href="/mayor/cvplRceptWebIntro.do?key=10228&amp;cvplCode=MINWON5"
+                                            target="_blank" title="새창" rel="noopener noreferrer">시장에게 바란다</a>
+                                    </li>
+                                    <li class="mayor_item"><a href="/mayor/contents.do?key=8547" target="_blank"
+                                            title="새창" rel="noopener noreferrer">공약(매니페스토)</a></li>
+                                    <!-- <li class="mayor_item"><a href="/mayor/selectBbsNttList.do?bbsNo=2244&amp;key=7820"
+                                            target="_blank" title="새창" rel="noopener noreferrer">하남민원</a></li>-->
+                                </ul>
+                            </div>
+                            <!-- <h3 class="sr-only">시장님 뉴스</h3>
                             <div class="mayor-news"
-                                style="background: url(/upload/mayornews/MAYORNEWS_20250625145846_71025.jpg) no-repeat 50% 50%;background-size: cover;">
+                                style="background: url(/img/mayor.png) no-repeat 50% 50%;background-size: cover;">
                                 <a href="https://mayor.seoul.go.kr/oh/seoul/briefingView.do?photoGallerySn=3752&amp;schCategory=&amp;curPage="
-                                    target="_blank" title="새창으로 이동"
-                                    onclick="fnMainHitClick('briefing','127');"><span>하남시,
-                                        K-건축 세계화 나선다</span></a>
-                            </div>
+                                    target="_blank" title="새창으로 이동" onclick="fnMainHitClick('briefing','127');">
+                                   <span>하남시, K-건축 세계화 나선다</span></a>
+                                /upload/mayornews/MAYORNEWS_20250625145846_71025.jpg -->
                         </div>
-
-
-
                         <div class="mayor-area-2023 mayor-area-2023-new mayor-area-2025">
-                            <h3 class="sr-only">온라인 시장실</h3>
-                            <a href="https://mayor.seoul.go.kr/" target="_blank"
-                                onclick="action_logging({'tr_code':'mayor'});" title="온라인 시장실 바로가기(새창)"
-                                class="link1"><span class="sr-only">서울특별시장 오세훈입니다.</span></a>
-                            <a href="https://eungdapso.seoul.go.kr/req/mayor_hope/mayor_hope.do" target="_blank"
-                                rel="noopener noreferrer" class="link2" title="응답소 홈페이지 시장에게 바란다 게시판으로 이동(새창)"
-                                onclick="action_logging({'tr_code':'manifesto'});"><span class="sr-only">시장에게
-                                    바란다</span></a>
-                            <div class="links-area">
-                                <a href="https://mayor.seoul.go.kr/oh/seoul/manifesto.do" target="_blank"
-                                    class="btn-links btn-links1" onclick="action_logging({'tr_code':'manifesto'});"
-                                    title="온라인 시장실 홈페이지내 공약(매니페스토) 페이지로 이동(새창)"><span
-                                        class="sr-only">공약(매니페스토)</span></a>
-                                <a href="https://idea.seoul.go.kr/" target="_blank" class="btn-links btn-links2"
-                                    onclick="action_logging({'tr_code':'manifesto'});"
-                                    title="상상대로 서울 홈페이지로 이동(새창)"><span class="sr-only">정책제안</span></a>
-                                <a href="https://mvoting.seoul.go.kr/" target="_blank" class="btn-links btn-links3"
-                                    onclick="action_logging({'tr_code':'manifesto'});" title="엠보팅 홈페이지로 이동(새창)"><span
-                                        class="sr-only">투표</span></a>
-                                <a href="https://research.seoul.go.kr/" target="_blank" class="btn-links  btn-links4"
-                                    onclick="action_logging({'tr_code':'manifesto'});"
-                                    title="온라인 여론조사 시스템 홈페이지로 이동(새창)"><span class="sr-only">설문조사</span></a>
+                            <div class="shortcut1">
+                                <ul class="shortcut_list">
+                                    <li class="shortcut_item n1"><a
+                                            href="/www/selectEmplWebList.do?key=158"><span>조직도</span></a>
+                                    </li>
+                                    <li class="shortcut_item n2"><a
+                                            href="/www/contents.do?key=482"><span>찾아오시는길</span></a>
+                                    </li>
+                                    <li class="shortcut_item n3"><a href="/site/www/service.html" target="_blank"
+                                            title="새창" rel="noopener noreferrer"><span>맞춤복지</span></a></li>
+                                    <li class="shortcut_item n4"><a href="http://gyeonggi.work.go.kr/hanam/main.do"
+                                            target="_blank" title="새창" rel="noopener noreferrer"><span>일자리정보</span></a>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
-
-
-                        <div class="sns-right-area">
-
-                            <a href="//www.seoul.go.kr/policy" target="_blank" title="하남시 정책 아카이브 바로가기(새창)"
-                                onclick="action_logging({'tr_code':'shop'});"><img
-                                    src="/res_newseoul/images/main/btn-right-policy-archive.png"
-                                    alt="검색창에 하남 정책 아카이브로 검색"></a>
-                            <a href="/seoul/smsAlarm/overView.do" onclick="action_logging({'tr_code':'sns_sms'});"><img
-                                    src="img/btn-right-sms-new.png" alt="시정소식 문자알림서비스 신청/해지"></a>
-                        </div>
-
-
                     </div>
 
                 </div>
-                <!-- //inner1-->
+
 
                 <div class="link_tabwrap">
                     <div class="link_tab" id="target_box">
@@ -5336,7 +5332,8 @@
                                         target="_self"><span></span>민원안내</a></li>
                                 <li class="obj3_14"><a href="https://www.sejong.go.kr/safety.do" title="재난안전대책본부 새창열림"
                                         target="_blank"><span></span>재난안전대책본부<i
-                                            class="bi bi-box-arrow-up-right"></i></a></li>
+                                            class="bi bi-box-arrow-up-right"></i></a>
+                                </li>
                                 <li class="obj3_15"><a href="https://onestop.sejong.go.kr" title="통합예약시스템 새창열림"
                                         target="_blank"><span></span>통합예약시스템<i class="bi bi-box-arrow-up-right"></i></a>
                                 </li>
@@ -5352,7 +5349,7 @@
                                 <li class="obj3_19"><a href="/prog/lecCourse/EMD/dong/sub03_03/intro.do"
                                         title="주민자치프로그램 바로가기" target="_self"><span></span>주민자치프로그램</a></li>
                                 <li class="obj3_20"><a href="https://smart.sejong.go.kr" title="세종엔 새창열림"
-                                        target="_blank"><span></span>세종엔<i class="bi bi-box-arrow-up-right"></i></a>
+                                        target="_blank"><span></span>하남엔<i class="bi bi-box-arrow-up-right"></i></a>
                                 </li>
                                 <li class="obj3_21"><a href="/prog/life/sub05_0102/list.do?drs_cd=1" title="병의원현황 바로가기"
                                         target="_self"><span></span>병의원현황</a></li>
@@ -5368,11 +5365,14 @@
                                 <li class="obj4_09"><a href="/prog/bbs/480/depart/sub01_1203/allList.do"
                                         title="기업민원해결센터 바로가기"><span></span>기업민원해결센터</a></li>
                                 <li class="obj4_04"><a href="/depart/sub01_060101.do"
-                                        title="투자유치 바로가기"><span></span>투자유치</a></li>
+                                        title="투자유치 바로가기"><span></span>투자유치</a>
+                                </li>
                                 <li class="obj4_12"><a href="/depart/sub01_060201.do"
-                                        title="산업단지 바로가기"><span></span>산업단지</a></li>
+                                        title="산업단지 바로가기"><span></span>산업단지</a>
+                                </li>
                                 <li class="obj4_11"><a href="/depart/sub01_0608.do"
-                                        title="기회발전특구 바로가기"><span></span>기회발전특구</a></li>
+                                        title="기회발전특구 바로가기"><span></span>기회발전특구</a>
+                                </li>
                                 <li class="obj4_01"><a href="/prog/yesanInfo/depart/sub01_010501/list.do"
                                         title="예산정보 바로가기"><span></span>예산정보</a></li>
 
@@ -5401,7 +5401,8 @@
                                 </li>
                                 <li class="obj5_04"><a href="/tour/sub03_0104.do" title="음식점/숙박정보 새창열림"
                                         target="_blank"><span></span>음식점/숙박정보<i
-                                            class="bi bi-box-arrow-up-right"></i></a></li>
+                                            class="bi bi-box-arrow-up-right"></i></a>
+                                </li>
                                 <li class="obj5_05"><a href="/tour/sub04_04.do" title="문화관광해설사 새창열림"
                                         target="_blank"><span></span>문화관광해설사<i class="bi bi-box-arrow-up-right"></i></a>
                                 </li>
@@ -5454,20 +5455,24 @@
                                         target="_blank"><span></span>세종통계<i class="bi bi-box-arrow-up-right"></i></a>
                                 </li>
                                 <li class="obj1_12"><a href="/depart/sub01_1408.do"
-                                        title="세종시티앱 바로가기"><span></span>세종시티앱</a></li>
+                                        title="세종시티앱 바로가기"><span></span>세종시티앱</a>
+                                </li>
                                 <li class="obj1_13"><a href="/depart/sub01_1403.do"
-                                        title="세종엔 바로가기"><span></span>세종엔</a></li>
+                                        title="세종엔 바로가기"><span></span>세종엔</a>
+                                </li>
                                 <li class="obj1_14"><a href="https://www.sejong.go.kr/ebook.do" title="전자도서관 새창열림"
                                         target="_blank"><span></span>전자도서관<i class="bi bi-box-arrow-up-right"></i></a>
                                 </li>
                                 <li class="obj1_16"><a href="https://www2.sejong.go.kr/bigdata"
                                         title="빅데이터 개방형 플랫폼 새창열림" target="_blank"><span></span>빅데이터 개방형 플랫폼<i
-                                            class="bi bi-box-arrow-up-right"></i></a></li>
+                                            class="bi bi-box-arrow-up-right"></i></a>
+                                </li>
                                 <li class="obj1_17"><a href="/prog/scheduleDetail/SCN_1/monthList.do"
                                         title="문화체육행사 캘린더 새창열림" target="_blank"><span></span>문화체육행사 캘린더<i
                                             class="bi bi-box-arrow-up-right"></i></a></li>
                                 <li class="obj1_18"><a href="/life/sub01_080104.do"
-                                        title="유기동물 공고 바로가기"><span></span>유기동물입양</a></li>
+                                        title="유기동물 공고 바로가기"><span></span>유기동물입양</a>
+                                </li>
                                 <li class="obj1_19"><a href="/prog/petition/1021/write.do?seqNo=8667"
                                         title="길고양이 TNR 신청 바로가기"><span></span>길고양이 TNR 신청</a></li>
                             </ul>
@@ -5475,21 +5480,14 @@
                         <small style="text-align:right;">(옆으로 스크롤시 내용을 더 확인할 수 있습니다.)</small>
                     </div>
                 </div>
-                <!-- 			<script type="text/javascript">
-                var param = "#target_box";
-                var btn = "h3>a";
-                var obj = ".obj";
-                var img = false;
-                var event = "click";
-                main_latest_bbs_renew(param,btn,obj,img,event);
-            </script> -->
                 <div class="board_wrap">
                     <div class="wrapper1">
                         <!-- board 탭 -->
                         <div class="board_group">
                             <div class="board_group_rg">
                                 <h3 class="tit1"><a href="javascript:;" title="공지사항 보기"
-                                        ondblclick="location.href='/bbs/R0071/list.do';" class="ov">공지사항</a></h3>
+                                        ondblclick="location.href='/bbs/R0071/list.do';" class="ov">공지사항</a>
+                                </h3>
                                 <div class="obj obj1" style="">
 
 
@@ -5501,16 +5499,24 @@
                                         <li class="long_txt nobl">
                                             <a href="/bbs/R0071/view.do?nttId=B000000134883Nf3eZ6g">
                                                 <img class="new" src="/images/home/notice_new.png" alt="NEW">
-                                                <span class="img date" title="2025.07.11"> 2025.07.<em> 11</em></span>
+                                                <span class="img date" title="2025.07.11"> 2025.07.<em>
+                                                        11</em></span>
                                                 <b>[새롬청소년센터]2025 청소년 마을 축제 「상상마을페스타」개최</b><span class="text">2025 청소년 마을
-                                                    축제 「상상마을페스타」개최마을과 마을, 청소년과 마을을 잇는 청소년 마을 축제청소년에, 청소년에 의한, 청소년을 위한 마을
-                                                    축제1. 축 제 명 : 2025 상상마을페스타 (청소년 마을 축제)- 축제부스 &amp; 공연 &amp; 플리마켓2.
-                                                    축제일시 : 7월 25일(금) 16:00~19:00- 1부. (16:00~17:30) 청소년 축제 부스- 2부.
-                                                    (17:30~19:00) 공연 및 이벤트3. 축제장소 : 새롬종합복지센터 일원 (세종시 새롬로 14)4. 대상 : 세종시
-                                                    관내 청소년 및 시민5. 공동주관 : 새롬청소년센터, 세종행복교육지원센터, 2생활권 세종마을교육지원센터6. 협력:
-                                                    새움중학교, 새롬고등학교, 세종시청소년활동진흥센터,댕냥이수호대, 마플, 가득초 학부모 동아리 꽃가득, 찾아가는 자원순환
+                                                    축제 「상상마을페스타」개최마을과 마을, 청소년과 마을을 잇는 청소년 마을 축제청소년에, 청소년에 의한,
+                                                    청소년을 위한 마을
+                                                    축제1. 축 제 명 : 2025 상상마을페스타 (청소년 마을 축제)- 축제부스 &amp; 공연 &amp;
+                                                    플리마켓2.
+                                                    축제일시 : 7월 25일(금) 16:00~19:00- 1부. (16:00~17:30) 청소년 축제 부스-
+                                                    2부.
+                                                    (17:30~19:00) 공연 및 이벤트3. 축제장소 : 새롬종합복지센터 일원 (세종시 새롬로 14)4.
+                                                    대상 : 세종시
+                                                    관내 청소년 및 시민5. 공동주관 : 새롬청소년센터, 세종행복교육지원센터, 2생활권 세종마을교육지원센터6.
+                                                    협력:
+                                                    새움중학교, 새롬고등학교, 세종시청소년활동진흥센터,댕냥이수호대, 마플, 가득초 학부모 동아리 꽃가득,
+                                                    찾아가는 자원순환
                                                     마을학교새롬마을교육협의회, 세종마을교육협의회, 세종시작은도서관연합회세종여성플라자, 세종남부지역자활센터,
-                                                    세종여성새로일하기센터,나다움협동조합, 다시보다 사회적협동조합, 한솔동여성의용소방대, 실번스토리세종사회복지공동모금회7. 상세
+                                                    세종여성새로일하기센터,나다움협동조합, 다시보다 사회적협동조합, 한솔동여성의용소방대,
+                                                    실번스토리세종사회복지공동모금회7. 상세
                                                     내용: 새롬청소년센터 홈페이지 공지사항
                                                     참고(http://www.sangsangy.or.kr/bbs/board.php?bo_table=notice&amp;wr_id=648)8.
                                                     문의: 새롬청소년센터 044-868-7865</span>
@@ -5521,7 +5527,8 @@
 
 
                                         <li>
-                                            <a href="/bbs/R0071/view.do?nttId=B000000134881Ns9sP7d">(금강유역환경청) 하천점용허가
+                                            <a href="/bbs/R0071/view.do?nttId=B000000134881Ns9sP7d">(금강유역환경청)
+                                                하천점용허가
                                                 고시(신규)</a>
                                             <span class="date"><em> 2025.</em>07.11</span>
                                         </li>
@@ -5539,7 +5546,8 @@
 
 
                                         <li>
-                                            <a href="/bbs/R0071/view.do?nttId=B000000134867Ee9lW2v">2025년 청년도전지원사업 하반기
+                                            <a href="/bbs/R0071/view.do?nttId=B000000134867Ee9lW2v">2025년
+                                                청년도전지원사업 하반기
                                                 참여자 모집 안내</a>
                                             <span class="date"><em> 2025.</em>07.11</span>
                                         </li>
@@ -5554,7 +5562,8 @@
 
 
                                         <li>
-                                            <a href="/bbs/R0071/view.do?nttId=B000000134871Il2oF1a">진실화해위원회 진실규명결정사건 관련
+                                            <a href="/bbs/R0071/view.do?nttId=B000000134871Il2oF1a">진실화해위원회
+                                                진실규명결정사건 관련
                                                 가족관계등록부 작성(정정) 신청 안내</a>
                                             <span class="date"><em> 2025.</em>07.11</span>
                                         </li>
@@ -5569,7 +5578,8 @@
 
 
                                         <li>
-                                            <a href="/bbs/R0071/view.do?nttId=B000000134849Ho1oW0h">2025년 무형유산 전수교육관
+                                            <a href="/bbs/R0071/view.do?nttId=B000000134849Ho1oW0h">2025년 무형유산
+                                                전수교육관
                                                 여름방학 특강 수강생 모집 안내</a>
                                             <span class="date"><em> 2025.</em>07.11</span>
                                         </li>
@@ -5595,10 +5605,12 @@
                                             불러오는 중입니다...</li>
                                     </ul>
                                     <a href="/prog/publicNotice/kor/sub02_030301/C1_1/list.do" class="btn-more"
-                                        title="고시/공고 더보기"><i class="bi bi-plus-lg"></i><span>고시/공고 더보기</span></a>
+                                        title="고시/공고 더보기"><i class="bi bi-plus-lg"></i><span>고시/공고
+                                            더보기</span></a>
                                 </div>
                                 <h3 class="tit3"><a href="javascript:;" title="시험정보 보기" class=""
-                                        ondblclick="location.href='/prog/exam/kor/sub02_0305/list.do';">시험정보</a></h3>
+                                        ondblclick="location.href='/prog/exam/kor/sub02_0305/list.do';">시험정보</a>
+                                </h3>
                                 <div class="obj obj3" style="display: none;">
                                     <!-- 게시판 리스트 -->
 
@@ -5657,7 +5669,8 @@
                                                 href="/prog/exam/kor/sub02_0305/view.do?pageIndex=1&amp;cntNo=1395"><img
                                                     class="new" src="/images/home/notice_new.png" alt="NEW"><span
                                                     class="img date" title=" 2025.07.11">
-                                                    2025.07.<em>11</em></span><b>2025년 제4회 세종특별자치시 임기제공무원 경력경쟁임용시험 최종합격자
+                                                    2025.07.<em>11</em></span><b>2025년 제4회 세종특별자치시 임기제공무원
+                                                    경력경쟁임용시험 최종합격자
                                                     공고</b><span class="text">세종특별자치시인사위원회 공고 제2025-22호
 
                                                     2025년 제4회 세종특별자치시 임기제공무원 임용시험 최종합격자를 다음과 같이 공고합니다.
@@ -5738,19 +5751,24 @@
                                                 href="/bbs/R0079/view.do?nttId=B000000134897Ka8kV6q&amp;mno=sub02_0401"><img
                                                     class="new" src="/images/home/notice_new.png" alt="NEW"><span
                                                     class="img date" title=" 2025.07.11">
-                                                    2025.07.<em>11</em></span><b>세종시 2025년 하반기 정기인사 5급 인사발령</b></a></li>
+                                                    2025.07.<em>11</em></span><b>세종시 2025년 하반기 정기인사 5급
+                                                    인사발령</b></a></li>
                                         <li><a href="/bbs/R0079/view.do?nttId=B000000134869Gp1oB1l&amp;mno=sub02_0401">'2025
                                                 핵테온 세종' 사이버보안 거점도시로 '우뚝'</a><span class="date"><em>
                                                     2025.</em>07.11</span></li>
                                         <li><a href="/bbs/R0079/view.do?nttId=B000000134868Er3uS3d&amp;mno=sub02_0401">내일의
-                                                사이버보안 주역들, 기량 겨뤘다</a><span class="date"><em> 2025.</em>07.11</span></li>
+                                                사이버보안 주역들, 기량 겨뤘다</a><span class="date"><em>
+                                                    2025.</em>07.11</span></li>
                                         <li><a href="/bbs/R0079/view.do?nttId=B000000134840Pf9zZ6v&amp;mno=sub02_0401">개미고개
-                                                전투 전사자 미군 428명 희생 기려</a><span class="date"><em> 2025.</em>07.11</span>
+                                                전투 전사자 미군 428명 희생 기려</a><span class="date"><em>
+                                                    2025.</em>07.11</span>
                                         </li>
                                         <li><a href="/bbs/R0079/view.do?nttId=B000000134839Gn9xD9j&amp;mno=sub02_0401">시민참여형
-                                                감사제 '청렴시민감사관' 위촉</a><span class="date"><em> 2025.</em>07.11</span></li>
+                                                감사제 '청렴시민감사관' 위촉</a><span class="date"><em>
+                                                    2025.</em>07.11</span></li>
                                         <li><a href="/bbs/R0079/view.do?nttId=B000000134838Jw3vD9l&amp;mno=sub02_0401">싱싱장터
-                                                납품 제조·가공업소 위생점검 '양호'</a><span class="date"><em> 2025.</em>07.11</span>
+                                                납품 제조·가공업소 위생점검 '양호'</a><span class="date"><em>
+                                                    2025.</em>07.11</span>
                                         </li>
                                     </ul>
 
@@ -5776,7 +5794,8 @@
                                     <ul id="wedgetWorkTotal">
                                         <li class="long_txt nobl"><a
                                                 href="/prog/publicNotice/kor/sub02_031001/C4/view.do?not_ancmt_mgt_no=64977"><span
-                                                    class="img state" title=" 접수중 "> 접수중 </span><b>2025년 세종특별자치시 사회조사
+                                                    class="img state" title=" 접수중 "> 접수중 </span><b>2025년 세종특별자치시
+                                                    사회조사
                                                     조사요원 모집공고</b></a></li>
                                         <li><a
                                                 href="/prog/publicNotice/kor/sub02_031001/C4/view.do?not_ancmt_mgt_no=65059">
@@ -5944,7 +5963,8 @@
                                         <li class="long_txt nobl"><a href="/prog/scheduleDetail/SCN_1/monthList.do"><img
                                                     class="new" src="/images/home/notice_new.png" alt="NEW"><span
                                                     class="img date"
-                                                    title="2025.07.11">2025.07.<em>11</em></span><b>2025 핵테온 세종 사이버보안
+                                                    title="2025.07.11">2025.07.<em>11</em></span><b>2025
+                                                    핵테온 세종 사이버보안
                                                     콘퍼런스</b></a></li>
                                     </ul>
                                     <a href="/prog/scheduleDetail/SCN_1/monthList.do" class="btn-more"
@@ -5989,7 +6009,8 @@
                                                                         <div class="comment_cnt">0"</div>
                                                                     </span></div>
                                                                 <div class="figcaption">
-                                                                    <p>AI, 해킹, 양자 보안까지! 지금 벌어지는 보안의 미래 – 2025핵테온</p>
+                                                                    <p>AI, 해킹, 양자 보안까지! 지금 벌어지는 보안의 미래 – 2025핵테온
+                                                                    </p>
                                                                 </div>
                                                             </a></div>
                                                     </div>
@@ -6049,7 +6070,8 @@
                                                                         <div class="comment_cnt">0"</div>
                                                                     </span></div>
                                                                 <div class="figcaption">
-                                                                    <p>세종시 물놀이형 수경 시설 가동 및 고복 야외 수영장 개장 운영 정보 소개</p>
+                                                                    <p>세종시 물놀이형 수경 시설 가동 및 고복 야외 수영장 개장 운영 정보 소개
+                                                                    </p>
                                                                 </div>
                                                             </a></div>
                                                     </div>
@@ -6069,7 +6091,8 @@
                                                                         <div class="comment_cnt">0"</div>
                                                                     </span></div>
                                                                 <div class="figcaption">
-                                                                    <p>다정동 행정복지센터 광장에서 열린 다정맘들 모여라! 양육고민 나눔의 장 현장 후기</p>
+                                                                    <p>다정동 행정복지센터 광장에서 열린 다정맘들 모여라! 양육고민 나눔의 장
+                                                                        현장 후기</p>
                                                                 </div>
                                                             </a></div>
                                                     </div>
@@ -6163,7 +6186,8 @@
                             <div class="cardNewsTitle">
                                 <h3 class="tit-h3">공식 <span>유튜브</span> <a href="#" target="_blank"
                                         title="공식 유튜브 새창보기"><i class="bi bi-box-arrow-up-right"></i><span
-                                            class="sr-only">공식 유튜브 새창보기</span></a></h3>
+                                            class="sr-only">공식 유튜브
+                                            새창보기</span></a></h3>
                                 <div class="cardNewsList" id="youtubefeed">
                                     <div class="items items-1"><a href="#" target="_black" title="그 소식 들었어? 상세보기"
                                             alt="그 소식 들었어?">
@@ -6299,7 +6323,8 @@
                                     <div>
                                         <div class="banner_item" style="width: 100%; display: inline-block;"><a
                                                 href="https://www.hnchildcare.or.kr/index.asp" target="_blank"
-                                                title="새창" class="banner_anchor" tabindex="-1">하남시육아종합지원센터</a></div>
+                                                title="새창" class="banner_anchor" tabindex="-1">하남시육아종합지원센터</a>
+                                        </div>
                                     </div>
                                     <div>
                                         <div class="banner_item" style="width: 100%; display: inline-block;"><a
@@ -6368,7 +6393,8 @@
                                     <div>
                                         <div class="banner_item" style="width: 100%; display: inline-block;"><a
                                                 href="https://www.easylaw.go.kr/CSP/Main.laf" target="_blank" title="새창"
-                                                class="banner_anchor" tabindex="-1">찾기쉬운 생활법령정보</a></div>
+                                                class="banner_anchor" tabindex="-1">찾기쉬운 생활법령정보</a>
+                                        </div>
                                     </div>
                                     <div>
                                         <div class="banner_item" style="width: 100%; display: inline-block;"><a
@@ -6391,7 +6417,8 @@
                                     <div>
                                         <div class="banner_item" style="width: 100%; display: inline-block;"><a
                                                 href="https://www.sexoffender.go.kr/index.nsc" target="_blank"
-                                                title="새창" class="banner_anchor" tabindex="-1">성범죄자 알리미</a></div>
+                                                title="새창" class="banner_anchor" tabindex="-1">성범죄자 알리미</a>
+                                        </div>
                                     </div>
                                     <div>
                                         <div class="banner_item" style="width: 100%; display: inline-block;"><a
@@ -6464,7 +6491,8 @@
                                     <div>
                                         <div class="banner_item" style="width: 100%; display: inline-block;"><a
                                                 href="https://www.cleanbudongsan.go.kr" target="_blank" title="새창"
-                                                class="banner_anchor" tabindex="-1">부동산거래질서교란행위 신고센터</a></div>
+                                                class="banner_anchor" tabindex="-1">부동산거래질서교란행위
+                                                신고센터</a></div>
                                     </div>
                                     <div>
                                         <div class="banner_item" style="width: 100%; display: inline-block;"><a
@@ -6515,7 +6543,8 @@
                                     <div>
                                         <div class="banner_item" style="width: 100%; display: inline-block;"><a
                                                 href="https://www.factoryon.go.kr/main/main.do" target="_blank"
-                                                title="새창" class="banner_anchor" tabindex="-1">공장설립 온라인 지원시스템</a></div>
+                                                title="새창" class="banner_anchor" tabindex="-1">공장설립 온라인
+                                                지원시스템</a></div>
                                     </div>
                                     <div>
                                         <div class="banner_item" style="width: 100%; display: inline-block;"><a
@@ -6626,7 +6655,8 @@
                                     <div>
                                         <div class="banner_item" style="width: 100%; display: inline-block;"><a
                                                 href="https://www.hnchildcare.or.kr/index.asp" target="_blank"
-                                                title="새창" class="banner_anchor" tabindex="-1">하남시육아종합지원센터</a></div>
+                                                title="새창" class="banner_anchor" tabindex="-1">하남시육아종합지원센터</a>
+                                        </div>
                                     </div>
                                     <div>
                                         <div class="banner_item" style="width: 100%; display: inline-block;"><a
@@ -6695,7 +6725,8 @@
                                     <div>
                                         <div class="banner_item" style="width: 100%; display: inline-block;"><a
                                                 href="https://www.easylaw.go.kr/CSP/Main.laf" target="_blank" title="새창"
-                                                class="banner_anchor" tabindex="-1">찾기쉬운 생활법령정보</a></div>
+                                                class="banner_anchor" tabindex="-1">찾기쉬운 생활법령정보</a>
+                                        </div>
                                     </div>
                                     <div>
                                         <div class="banner_item" style="width: 100%; display: inline-block;"><a
@@ -6718,7 +6749,8 @@
                                     <div>
                                         <div class="banner_item" style="width: 100%; display: inline-block;"><a
                                                 href="https://www.sexoffender.go.kr/index.nsc" target="_blank"
-                                                title="새창" class="banner_anchor" tabindex="-1">성범죄자 알리미</a></div>
+                                                title="새창" class="banner_anchor" tabindex="-1">성범죄자 알리미</a>
+                                        </div>
                                     </div>
                                     <div>
                                         <div class="banner_item" style="width: 100%; display: inline-block;"><a
@@ -6791,7 +6823,8 @@
                                     <div>
                                         <div class="banner_item" style="width: 100%; display: inline-block;"><a
                                                 href="https://www.cleanbudongsan.go.kr" target="_blank" title="새창"
-                                                class="banner_anchor" tabindex="-1">부동산거래질서교란행위 신고센터</a></div>
+                                                class="banner_anchor" tabindex="-1">부동산거래질서교란행위
+                                                신고센터</a></div>
                                     </div>
                                     <div>
                                         <div class="banner_item" style="width: 100%; display: inline-block;"><a
@@ -6842,7 +6875,8 @@
                                     <div>
                                         <div class="banner_item" style="width: 100%; display: inline-block;"><a
                                                 href="https://www.factoryon.go.kr/main/main.do" target="_blank"
-                                                title="새창" class="banner_anchor" tabindex="-1">공장설립 온라인 지원시스템</a></div>
+                                                title="새창" class="banner_anchor" tabindex="-1">공장설립 온라인
+                                                지원시스템</a></div>
                                     </div>
                                     <div>
                                         <div class="banner_item" style="width: 100%; display: inline-block;"><a
@@ -6914,9 +6948,12 @@
                 <div class="wrap">
                     <ul class="link_list">
                         <li class="link_item"><a href="/www/contents.do?key=459" class="link_anchor">개인정보처리방침</a></li>
-                        <li class="link_item"><a href="/www/contents.do?key=2259" class="link_anchor">저작권정책</a></li>
-                        <li class="link_item"><a href="/www/contents.do?key=7560" class="link_anchor">청사안내</a></li>
-                        <li class="link_item"><a href="/www/contents.do?key=482" class="link_anchor">찾아오시는길</a></li>
+                        <li class="link_item"><a href="/www/contents.do?key=2259" class="link_anchor">저작권정책</a>
+                        </li>
+                        <li class="link_item"><a href="/www/contents.do?key=7560" class="link_anchor">청사안내</a>
+                        </li>
+                        <li class="link_item"><a href="/www/contents.do?key=482" class="link_anchor">찾아오시는길</a>
+                        </li>
                     </ul>
                 </div>
             </div>

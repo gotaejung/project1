@@ -1,36 +1,45 @@
 @charset "UTF-8";
 
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
 /* 본고딕 */
-@font-face{
+/* @font-face{
 	font-family: 'NotoKr';
 	font-weight: 200;
 	src: url("../fonts/NotoSansCJKkr-Light.woff2") format('woff2'),
 	url("../fonts/NotoSansCJKkr-Light.woff") format('woff');
-}
-@font-face{
+} */
+/* @font-face{
 	font-family: 'NotoKr';
 	font-weight: 300;
 	src: url("../fonts/NotoSansCJKkr-DemiLight.woff2") format('woff2'),
 	url("../fonts/NotoSansCJKkr-DemiLight.woff") format('woff');
-}
-@font-face{
+} */
+/* @font-face{
 	font-family: 'NotoKr';
 	font-weight: 500;
 	src: url("../fonts/NotoSansCJKkr-Medium.woff2") format('woff2'),
 	url("../fonts/NotoSansCJKkr-Medium.woff") format('woff');
-}
-@font-face{
+} */
+/* @font-face{
 	font-family: 'NotoKr';
 	font-weight: 600;
 	src: url("../fonts/NotoSansCJKkr-Bold.woff2") format('woff2'),
 	url("../fonts/NotoSansCJKkr-Bold.woff") format('woff');
-}
+} */
 
 /* 임펙타민 */
-@font-face {
+/* @font-face {
 	font-family: 'DWImpactamin';
 	font-weight: normal;
 	font-style: normal;
 	src: url('../fonts/DWImpactamin.woff') format('woff'),
 	url('../fonts/DWImpactamin.woff2') format('woff2');
-}
+} */
