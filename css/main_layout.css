@@ -281,15 +281,15 @@
 .mayor:before,
 .mayor:after{display:block; position:absolute;}
 /*.mayor:before{top:88px; right:-54px; width:439px; height:439px; background:url('../images/main/mayor_bg.png') no-repeat;}*/
-.mayor:before{top:62px; right:-41px; width:439px; height:439px; background:url('./img/mayor_bg2.png') no-repeat;}
-.mayor:after{right:36px; top:0px; /* bottom:0; */ width:269px; height:319px; /* width:269px; height:319px;  */background:url('./img/mayor_photo2.png') no-repeat; background-size: auto 250px ;}
+.mayor:before{top:62px; right:-41px; width:439px; height:439px; background:url('../img/mayor_bg2.png') no-repeat;}
+.mayor:after{right:36px; top:0px; /* bottom:0; */ width:269px; height:319px; /* width:269px; height:319px;  */background:url('../img/mayor_photo2.png') no-repeat; background-size: auto 250px ;}
 .mayor .mayor_title{position:relative;}
 .mayor .mayor_title .mayor_slogan{display:block; margin-bottom:5px; color:#ec6c61; font-size:22px; line-height:30px;}
 .mayor .mayor_title .mayor_slogan img{position:relative; left: -15px; width:90%;}
 .mayor .mayor_title .mayor_name{position:relative; color:#363c5a; font-size:16px; line-height:38px;}
 .mayor .mayor_title .mayor_name span{font-size:24px; letter-spacing:0.05em;}
 .mayor .mayor_title .mayor_name:before{display:none;}
-.mayor .mayor_item a:after{display:block; position:absolute; background-image:url('./img/mayor_sprite.png');}
+.mayor .mayor_item a:after{display:block; position:absolute; background-image:url('../img/mayor_sprite.png');}
 .mayor .mayor_link{position:relative; margin-top:0px; /* margin-top:38px; */ padding-left:18px;}
 .mayor .mayor_item + .mayor_item{margin-top:3px;}
 .mayor .mayor_item a{display:inline-block; position:relative; padding-right:38px; padding-left:30px; border-radius:16px; color:#43475e; font-size:16px; font-weight:300; line-height:33px; letter-spacing:-0.03em;}
