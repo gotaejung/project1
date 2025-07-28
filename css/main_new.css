@@ -230,7 +230,7 @@ select, input{font-size: 16px}
 
 
 /* 서울시 메인 - 메인슬라이드 우측영역*/
-.inner_wrap{width:1152px; margin:auto; box-sizing:border-box;}
+.inner_wrap{width:1400px; margin:auto; box-sizing:border-box;}
 .inner_wrap > div:after, .inner_wrap > section:after{content:''; display:block; clear:both;}
 .inner1{height:350px;overflow: hidden}
 .inner1 .slide{width:770px; float:left; position:relative;}
