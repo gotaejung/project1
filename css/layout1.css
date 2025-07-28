@@ -249,7 +249,7 @@ body{background-color:#fff; color:#555; font-size:16px; font-weight:300; font-fa
 .home .weather{position:absolute; top:42px; right:0; height:76px; font-size:0; line-height:0;}
 .home .weather > div{height:100%;}
 .home .weather .weather_info{display:inline-block; padding-top:9px; padding-left:88px; vertical-align:top;}
-.home .weather .weather_sate{display:block; position:absolute; top:0; left:0; width:76px; height:76px; border-radius:50%; background-image:url('/img/weather_sprite2.png'); background-repeat:no-repeat; background-size:76px auto; background-color:#f4f5f9;}
+.home .weather .weather_sate{display:block; position:absolute; top:0; left:0; width:76px; height:76px; border-radius:50%; background-image:url('../img/weather_sprite2.png'); background-repeat:no-repeat; background-size:76px auto; background-color:#f4f5f9;}
 .home .weather .weather_sate.type1{background-position:left top;}
 .home .weather .weather_sate.type2{background-position:left 14.28%;}
 .home .weather .weather_sate.type3{background-position:left 28.57%;}

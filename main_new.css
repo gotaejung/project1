@@ -1,0 +1,277 @@
+@charset "utf-8";
+
+select, input{font-size: 16px}
+.dark {color:#222 !important}
+.basic {color:#555 !important}
+.light {color:#767676 !important}
+.star {position:relative; display:inline-block; padding-left:10px;}
+.star:before {position:absolute; top:0; left:0; content:'*';}
+.mgT5 {margin-top:5px;}
+.mgT10 {margin-top:10px;}
+.mgT15 {margin-top:15px}
+.mgT20 {margin-top:20px}
+.mgT30 {margin-top:30px}
+.mgT40 {margin-top:40px}
+.mgL10 {margin-left:10px;}
+
+/* 전체서비스 추가 */
+.mgT60 {margin-top:60px !important;}
+.service {float:none !important; width:100% !important;}
+
+
+/*메인 헤더*/
+.main {letter-spacing: -0.05em}
+
+
+
+
+
+/* 서울시 메인 - 메인슬라이드 우측영역*/
+.inner_wrap{width:1400px; margin:auto; box-sizing:border-box;}
+.inner_wrap > div:after, .inner_wrap > section:after{content:''; display:block; clear:both;}
+.inner1{height:350px; overflow: hidden; margin-bottom: 30px}
+.inner1 .slide{width:770px; float:left; position:relative;}
+
+
+body.citizen .inner1 .slide_content1 {margin-top: -350px;}
+/* slide tab 2019 */
+.ico_main {display: inline-block;background: url(/img/icon_main_2019.png) no-repeat 0 0;}
+/* .inner1 .slide_tab {position: absolute;top: 0;left: 0;width: 80px;height: 350px;} */
+.inner1 .slide_content  h3 {position: absolute;top: 0;left: 0;width: 80px;height: 175px}
+.inner1 .slide_content2 h3 {top: 176px;}
+.inner1 .slide_content h3 + h3 {top: 176px;}
+.inner1 .slide_content h3 a,
+.inner1 .slide_content h3 button{position: relative;display: block;width: 100%;height: 100%;padding-top: 50px;background-color: #d2e1e9;color: #333;font-weight: 600;text-align: center;box-sizing: border-box}
+.inner1 .slide_content h3 button {padding-top: 0;font-family: 'Nanum Gothic';font-size: 14px;}
+.inner1 .slide_content h3 a:focus-visible,
+.inner1 .slide_content h3 button:focus-visible{border: 3px dotted #ff0000;outline: none;}
+.inner1 .slide_content h3 a.on,
+.inner1 .slide_content h3 button.on{background-color: #437dea;color: #fff}
+.inner1 .slide_content h3 a.on:after,
+.inner1 .slide_content h3 button.on:after{
+content: " ";
+position: absolute;
+z-index: 10;
+left: 99%;
+top: 50%;
+width: 0;
+height: 0;
+border-style: solid;
+border-width: 25px 0 25px 32px;
+border-color: transparent transparent transparent #0158a8;
+margin-top: -25px;
+}
+.inner1 .slide_content h3 a .ico_main,
+.inner1 .slide_content h3 button .ico_main {display: block;width: 50px;height: 50px;margin:0 auto 10px;background-color: #fff;background-position: 0 0;border-radius: 50%;}
+.inner1 .slide_content h3 a .ico_main_citizen,
+.inner1 .slide_content h3 button .ico_main_citizen {background-position: -50px 0px}
+.inner1 .slide_content {margin-left: 80px;}
+
+
+.inner1 #slides{position:relative;}
+#slides a.slidesjs-play, #slides a.slidesjs-stop{position:absolute; position:absolute; right:54px; bottom:19px; z-index:12;}
+#slides a.slidesjs-next,
+#slides a.slidesjs-previous,
+#slides a.slidesjs-play,
+#slides a.slidesjs-stop {
+    background-image:url(../images/icon_set_common.png);
+    background-repeat: no-repeat;
+    display:block;
+    overflow: hidden;
+    text-indent: -9999px;
+  }
+#slides a.slidesjs-previous {display:inline-block; width:36px; height:50px; background-position:-172px -105px; position:absolute; left:0; top:50%; margin-top:-25px; z-index:11;}
+#slides a.slidesjs-next {display:inline-block; width:36px; height:50px; background-position:-213px -105px; position:absolute; right:0; top:50%; margin-top:-25px; z-index:11;}
+#slides a.slidesjs-play {width:10px; background-position:-261px -105px;}
+#slides a:hover.slidesjs-play {background-position:-250px -105px;}
+#slides a.slidesjs-stop {width:10px; background-position:-250px -105px;}
+#slides a:hover.slidesjs-stop {background-position:-261px -105px;}
+#slidesjs-log{display:inline-block; width:90px; height:32px; border-radius:16px; background-color:rgba(0,0,0,.5); position:absolute; right:40px; bottom:16px; color:#fff; z-index:11; line-height:32px; padding-left:17px; box-sizing:border-box;}
+#slidesjs-log span{color:#fff; line-height:32px;}
+
+/* 배너 전체보기 */
+.slide-all .slide_content .hi_control,
+.slide-all .slide_content .ci_control {right: 90px;}
+.slide-all .figcaption {padding-right: 205px}
+.div-scroll {overflow: scroll; position: absolute; top: -99999px; width: 60px; height: 60px;}
+.banner-all-wrap {z-index: 1000;position: fixed;top: 0;left: 0;display: none;flex-wrap: wrap;align-items: center;flex-direction: column;width: 100%;height: 100vh;background: rgba(0,0,0, .75);overflow-y: auto;box-sizing: border-box;}
+.banner-all-wrap.on {display: flex;}
+.banner-all-wrap h4 {color: #fff;font-size: 30px;}
+.banner-wrap {padding: 0 0 20px;background: url(../images/main/bannerAll-title-bg.png) no-repeat 50% 0;}
+.banner-wrap h5 {padding: 70px 0 20px;text-align: center;}
+.banner-all {display: flex;flex-direction: column;width: 100%;max-width: 1400px;margin: 0 auto; box-sizing: content-box}
+.banner-list {display: flex;flex-wrap: wrap;gap: 10px}
+.banner-list li {width: calc(50% - 5px)}
+.banner-list li a {display: flex;}
+.banner-list li a img {width: 100%;height: auto;}
+.btn-showAll {position: absolute;bottom: 3px;right: 3px;background: #000;color: #fff;display: flex;align-items: center;justify-content: center;gap: 5px;padding: 9px 8px 9px 8px;font-family: 'Pretendard';font-size: 13px;}
+.btn-showAll:before {content: '';width: 12px;height: 12px;background: url(/img/bannerAll-ico.png) no-repeat 0 0;}
+.btn-showAll-close {position: absolute;top: 55px;left: 50%;margin-left: 526px;background: #3d72fc;width: 50px;height: 50px;border-radius: 50%;}
+.btn-showAll-close:before {content: '';position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%) rotate(45deg);width: 24px;height: 4px;background: #fff;border-radius: 3px;}
+.btn-showAll-close:after {content: '';position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%) rotate(-45deg);width: 24px;height: 4px;background: #fff;border-radius: 3px;}
+
+/* 소셜시장실 new */
+.inner1 .m_right {float: right;width: 360px;}
+.inner1 .m_mayor_wrap {float: right;width: 600px;height: 350px;}
+.inner1 .m_mayor {position: relative;height: 230px;margin-bottom: 10px;background: url(../images/main/img_mayor_2019_2.jpg) no-repeat 0 0;}
+
+.inner1 .m_mayor a {position: relative;display: block;width: 100%;height: 230px;}
+.inner1 .m_mayor a p {position: absolute;display: block;left: 0;bottom: 0;width: 100%;/* height: 60px; */padding: 10px 16px;color: #fff;background: rgba(0,0,0,.6);box-sizing: border-box;}
+
+
+.banner-vision2030 a {display: block}
+.banner-vision2030 a:focus-visible,
+.mayor-area-2022>a:focus-visible,
+.mayor-area-2023>a:focus-visible,
+
+
+/* 온라인시장실 2022-02-14 */
+.mayor-area-2022 {position: relative;margin-top: 7px;}
+.mayor-area-2022>a {display: block}
+.mayor-area-2022 .links-area a {display: block;position: absolute;bottom: 15px;z-index: 1;}
+.mayor-area-2022 .links-area a.links1 {left: 15px;}
+.mayor-area-2022 .links-area a.links2 {left: 119px;}
+
+.mayor-area-220711 .links-area a {bottom: 20px;}
+.mayor-area-220711 .links-area a.links1 {left: 130px;}
+.mayor-area-220711 .links-area a.links2 {left: 237px;}
+
+.mayor-area-220715 .links-area a {bottom: 12px;}
+.mayor-area-220715 .links-area a.links1 {left: 130px;}
+.mayor-area-220715 .links-area a.links2 {left: 237px;}
+
+.mayor-area-221031 .links-area a {bottom: 32px;}
+.mayor-area-221031 .links-area a.links1 {left: 139px;}
+.mayor-area-221031 .links-area a.links2 {left: 245px;}
+
+/* 온라인시장실 버튼 추가 2023-02-13 */
+.mayor-area-2023 {position: relative;margin-top: 7px;}
+.mayor-area-2023 .links-area {display: flex;justify-content: space-between;position: absolute;width: 100%;left: 0;bottom: 0;z-index: 1;height: 90px;}
+.mayor-area-2023 .links-area a {display: flex;align-items: center;justify-content: center;width: calc(25% - 1px);height: 100%;background-color: #8b7153;}
+.mayor-area-2023 .links-area a:focus-visible {width: calc(25% - 6px);}
+.mayor-area-2023 a.link2 {position: absolute;top: 18px;right: 14px;}
+.mayor-area-2023  .m_news.m_news_new{width: 50%}
+
+
+/* 우측 상단 영역 리뉴얼 2022-10-11 */
+
+.mayor-news-area {margin: 10px 0;}
+.mayor-news-area .mayor-news {position: relative;width: 100%;height: 204px;}
+.mayor-news-area .mayor-news a {display: block;width: 100%;height: 100%;}
+.mayor-news-area .mayor-news a:focus-visible {border: 3px dotted #ff0000;width: calc(100% - 6px);height: calc(100% - 3px);outline: none;}
+.mayor-news-area .mayor-news a span {position: absolute;bottom: 0;left: 0;display: block;width: 100%;box-sizing: border-box;height: 40px;line-height: 40px;padding: 0 10px;background: rgba(0,0,0, .7);color: #fff;font-weight: 700;overflow: hidden;/* text-overflow: ellipsis;white-space: nowrap; */}
+
+/* 시장실 영역 변경 2023-08-03 */
+.mayor-news-area .mayor-news-2308 a img {width: 100%;}
+
+.mayor-area-2022.mayor-area-221011 {height: 90px;}
+.mayor-area-2022.mayor-area-221011 .links-area a {top: 44px}
+.mayor-area-2022.mayor-area-221011 .links-area a.links1 {left: 136px;}
+.mayor-area-2022.mayor-area-221011 .links-area a.links2 {left: 243px;}
+
+
+/* 코로나19 배너 삭제후 시장실 영역 변경 2023-08-30 */
+.mayor-news-area-2023 {margin: 0 0 10px}
+.mayor-news-area-2023 .mayor-news {height: 250px}
+.mayor-area-2023-new {margin: 0;height: 90px}
+
+
+/* 시장실영역 하단에 카톡채널, SNS추가 2023-08-30 */
+.mayor-news-231110 {margin: 0 0 10px;}
+.mayor-news-231110 .mayor-news {height: 250px}
+.traffic-banner {display: none;}
+
+
+/* 문자알림서비스 추가 2024-07-08  지우면 안됨*/
+/* .sns-right-area {display: flex;justify-content: space-between;margin-top: 10px;} */
+
+
+
+
+@media (max-width: 1151px) {
+
+	#wrap {min-width:1151px;margin:0 auto;}
+
+}
+
+
+/* 메인 : Hot Issue */
+.hotissue_banner { position:relative; display:block; box-sizing:border-box; overflow:hidden; height: 350px} 
+.hotissue_banner .btn_hi,
+.hotissue_banner .btn_ci { position:absolute; top: calc(50% + 1px); transform:translateY(-50%); -webkit-transform:translateY(-50%); width:18px; height:18px;  z-index:10; cursor:pointer; background-position:center; background-repeat: no-repeat; text-indent:-9999px; }
+.hotissue_banner .btn_hi > a,
+.hotissue_banner .btn_ci > a{ position:absolute; left:0; top:0; width:100%; height:100%; text-indent:-9999px;  }
+.hotissue_banner .btn_hi_prev,
+.hotissue_banner .btn_ci_prev { left:49px; background-image: url("/img/icon_set_common_2019.png"); background-position:-241px -285px; }
+.hotissue_banner .btn_hi_next,
+.hotissue_banner .btn_ci_next { right:2px; background-image: url("/img/icon_set_common_2019.png"); background-position:-256px -285px; }
+
+.hotissue_banner .hi_control,
+.hotissue_banner .ci_control { position:absolute; display:block; right:3px; bottom:4px; width:110px; height:32px; border-radius:16px;box-sizing:border-box; z-index:11; }
+.hotissue_banner .hi_control:before,
+.hotissue_banner .ci_control:before {content: '';position: absolute;top: 4px;right: 66px;width: 1px;height: 24px;background: rgba(255,255,255,.5);}
+.hotissue_banner .hi_control .hi_pagers,
+.hotissue_banner .ci_control .ci_pagers{ position:absolute; display:block; right:80px; top:50%; width:auto; color:#fff; transform:translateY(-50%); -webkit-transform:translateY(-50%);overflow:hidden; text-align: right;}
+.hotissue_banner .hi_control .hi_pagers > span,
+.hotissue_banner .ci_control .ci_pagers > span { color:#fff;letter-spacing: 0; font-size: 13px;}
+.hotissue_banner .hi_control .hi_play,
+.hotissue_banner .ci_control .ci_play { position:absolute; display:block; right:21px; top: calc(50% + 1px); width:18px; height:18px; transform:translateY(-50%); -webkit-transform:translateY(-50%);overflow:hidden; }
+.hotissue_banner .hi_control .hi_play > a,
+.hotissue_banner .ci_control .ci_play > a { display:block; width:100%; height:100%; text-indent:-9999px; overflow:hidden; }
+.hotissue_banner .hi_control .hi_play > .btn_hi_start,
+.hotissue_banner .ci_control .ci_play > .btn_ci_start { display:none; background:url("/img/icon_set_common_2019.png") no-repeat -269px -285px; }
+.hotissue_banner .hi_control .hi_play > .btn_hi_stop,
+.hotissue_banner .ci_control .ci_play > .btn_ci_stop { background:url("/img/icon_set_common_2019.png") no-repeat -285px -285px; } 
+
+.hotissue_banner .hi_wrapper,
+.hotissue_banner .ci_wrapper { position:relative; display:block; overflow:hidden; }
+.hotissue_banner .hi_wrapper .bx-wrapper,
+.hotissue_banner .ci_wrapper .bx-wrapper{ margin-bottom:0; border:0; box-shadow:none; }
+
+.hotissue_banner .hi_slide li > a,
+.hotissue_banner .ci_slide li > a { display:block; width:100%; height:100%; box-sizing:border-box; }
+.hotissue_banner .hi_slide li > a:focus-visible img,
+.hotissue_banner .ci_slide li > a:focus-visible img{border: 3px dotted #ff0000;width: calc(100% - 6px);height: calc(100% - 6px)}
+.figcaption,
+.caption-area {position: absolute;left: 0;bottom: 0px;width: 100%;height: 40px;line-height: 40px;padding-left: 10px;padding-right: 122px;background-color: rgba(0,0,0,.7);color: #fff;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;box-sizing: border-box;}
+
+/* 메인 : Hot Issue New 2022-12-20 */
+.hotissue_banner { position:relative; display:block; box-sizing:border-box; overflow:hidden; height: 350px} /* 2019-02-28 height: 350px 추가 */
+.hotissue_banner .btn_ai { position:absolute; top: calc(50% + 1px); transform:translateY(-50%); -webkit-transform:translateY(-50%); width:20px; height:20px;  z-index:10; cursor:pointer; background-position:center; background-repeat: no-repeat; text-indent:-9999px; }
+.hotissue_banner .btn_ai > a{ position:absolute; left:0; top:0; width:100%; height:100%; text-indent:-9999px;  }
+.hotissue_banner .btn_ai_prev { left:54px; background-image: url("/img/icon_set_common_2019.png"); background-position:-237px -284px; }
+.hotissue_banner .btn_ai_next { right:2px; background-image: url("/img/icon_set_common_2019.png"); background-position:-255px -284px; }
+
+.hotissue_banner .ai_control { position:absolute; display:block; right:3px; bottom:4px; width:120px; height:32px; border-radius:16px; /* background-color:rgba(0,0,0,.5);  */box-sizing:border-box; z-index:11; }
+.hotissue_banner .ai_control:before {content: '';position: absolute;top: 7px;right: 68px;width: 1px;height: 18px;background: rgba(255,255,255,.5);}
+.hotissue_banner .ai_control .ai_pagers { position:absolute; display:block; right:80px; top:50%; width:auto; color:#fff; transform:translateY(-50%); -webkit-transform:translateY(-50%);overflow:hidden; text-align: right;}
+.hotissue_banner .ai_control .ai_pagers > span { color:#fff;letter-spacing: 0; font-size: 13px;}
+.hotissue_banner .ai_control .ai_play { position:absolute; display:block; right:21px; top: calc(50% + 1px); width:20px; height:20px; transform:translateY(-50%); -webkit-transform:translateY(-50%);overflow:hidden; }
+.hotissue_banner .ai_control .ai_play > a { display:block; width:100%; height:100%; text-indent:-9999px; overflow:hidden; }
+.hotissue_banner .ai_control .ai_play > .btn_ai_start { display:none; background:url("/img/icon_set_common_2019.png") no-repeat -269px -284px; }
+.hotissue_banner .ai_control .ai_play > .btn_ai_stop { background:url("/img/icon_set_common_2019.png") no-repeat -283px -284px; } 
+
+.hotissue_banner .ai_wrapper { position:relative; display:block; overflow:hidden; }
+.hotissue_banner .ai_wrapper .bx-wrapper { margin-bottom:0; border:0; box-shadow:none; }
+
+.hotissue_banner .ai_slide li > a { display:block; width:100%; height:100%; box-sizing:border-box; }
+.hotissue_banner .ai_slide li > a:focus-visible img {border: 2px solid #000;width: calc(100% - 4px);height: calc(100% - 4px)}
+.figcaption,
+.caption-area {position: absolute;left: 0;bottom: 0px;width: 100%;height: 40px;line-height: 40px;padding-left: 10px;padding-right: 122px;background-color: rgba(0,0,0,.7);color: #fff;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;box-sizing: border-box;}
+
+
+
+/* 교통량 사이드 배너 추가 2020-08-10  */
+.side_banner_new {}
+.side_banner_new .img {overflow: visible; height: 230px;}
+.s_banner_wrap > .img > a:focus-visible img {outline: 1px dotted #000;}
+
+
+/* 시장실 기본 */
+.mayor-area-2025 a.link1 {display: block;width: 360px; height: 90px;background: url(../images/main/img-mayor-intro.png) no-repeat 0 0}
+.mayor-area-2025 a.link1 img {position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); border: 0;}
+.mayor-area-2025 a.link2 {display: block;width: 110px;height: 30px;background: url(../images/main/btn-mayorlink0.png) no-repeat 0 0}
+.mayor-area-2025 .links-area a.btn-links1 {background: #8b7153 url(/img/1.png) no-repeat 50% 50%}
+.mayor-area-2025 .links-area a.btn-links2 {background: #8b7153 url(/img/2.png) no-repeat 50% 50%}
+.mayor-area-2025 .links-area a.btn-links3 {background: #8b7153 url(/img/3.png) no-repeat 50% 50%}
+.mayor-area-2025 .links-area a.btn-links4 {background: #8b7153 url(/img/4.png) no-repeat 50% 50%}
