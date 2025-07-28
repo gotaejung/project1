@@ -356,7 +356,7 @@
 .shortcut1 .shortcut_item a:after{display:block; position:absolute; left:0; right:0; margin-right:auto; margin-left:auto;}
 .shortcut1 .shortcut_item a:before{overflow:hidden; top:0px; width:60px; height:60px; border-radius:30px; background-color:#fff; box-shadow:0 0 15px rgba(13, 36, 78, 0.15);}
 .shortcut1 .shortcut_item a:hover:before{box-shadow:0 0 25px 0 rgba(13, 36, 78, 0.25);}
-.shortcut1 .shortcut_item a:after{top:10px; width:44px; height:44px; background-image:url('/img/shortcut_sprite.png'); background-repeat:no-repeat; background-size: 80%; transition-property:none;}
+.shortcut1 .shortcut_item a:after{top:10px; width:44px; height:44px; background-image:url('../img/shortcut_sprite.png'); background-repeat:no-repeat; background-size: 80%; transition-property:none;}
 .shortcut1 .shortcut_item a:hover:after{transform:rotateY(360deg);}
 .shortcut1 .shortcut_item.n1 a:after{background-position:left top;}
 .shortcut1 .shortcut_item.n2 a:after{background-position:left 33.33%;}
