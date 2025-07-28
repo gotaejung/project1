@@ -71,7 +71,7 @@
 .rowgroup{position:relative;}
 .rowgroup:before,
 .rowgroup:after{display:block; position:absolute;}
-.rowgroup:before{top:0; right:0; bottom:-60px; width:1265px; /*width:1310px;*/ background:url('../images/main/rowgroup_bg.png') no-repeat right center; background-size:cover;}
+.rowgroup:before{top:0; right:0; bottom:-60px; width:1265px; /*width:1310px;*/ background:url('../img/main/rowgroup_bg.png') no-repeat right center; background-size:cover;}
 #container .rowgroup .wrap{position:relative; padding-top:65px; padding-left:860px;}
 #container .rowgroup .wrap:before{display:block; position:absolute; top:285px; right:calc(100% + 77px); width:100%; height:24px; border-bottom:1px solid #e5e7ee; background:url('../images/main/rowgroup_text.png') no-repeat right top;}
 .rowgroup .colgroup{position:absolute; top:0; left:0; z-index:1; width:770px;}
