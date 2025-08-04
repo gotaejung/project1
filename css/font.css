@@ -9,37 +9,22 @@
     font-style: normal;
 }
 
-/* 본고딕 */
-/* @font-face{
-	font-family: 'NotoKr';
-	font-weight: 200;
-	src: url("../fonts/NotoSansCJKkr-Light.woff2") format('woff2'),
-	url("../fonts/NotoSansCJKkr-Light.woff") format('woff');
-} */
-/* @font-face{
-	font-family: 'NotoKr';
-	font-weight: 300;
-	src: url("../fonts/NotoSansCJKkr-DemiLight.woff2") format('woff2'),
-	url("../fonts/NotoSansCJKkr-DemiLight.woff") format('woff');
-} */
-/* @font-face{
-	font-family: 'NotoKr';
-	font-weight: 500;
-	src: url("../fonts/NotoSansCJKkr-Medium.woff2") format('woff2'),
-	url("../fonts/NotoSansCJKkr-Medium.woff") format('woff');
-} */
-/* @font-face{
-	font-family: 'NotoKr';
-	font-weight: 600;
-	src: url("../fonts/NotoSansCJKkr-Bold.woff2") format('woff2'),
-	url("../fonts/NotoSansCJKkr-Bold.woff") format('woff');
-} */
-
-/* 임펙타민 */
+/* Pretendard */
 /* @font-face {
-	font-family: 'DWImpactamin';
-	font-weight: normal;
-	font-style: normal;
-	src: url('../fonts/DWImpactamin.woff') format('woff'),
-	url('../fonts/DWImpactamin.woff2') format('woff2');
+	font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/module/font_noonu/Pretendard-Regular.eot');
+    src: url('/module/font_noonu/Pretendard-Regular.eot?#iefix') format('embedded-opentype'),
+    url('/module/font_noonu/Pretendard-Regular.woff') format('woff'),
+    url('/module/font_noonu/Pretendard-Regular.otf') format('opentype');
+}
+@font-face {
+	font-family: 'Pretendard';
+    font-style: bold;
+    font-weight: 700;
+    src: url('/module/font_noonu/Pretendard-Bold.eot');
+    src: url('/module/font_noonu/Pretendard-Bold.eot?#iefix') format('embedded-opentype'),
+    url('/module/font_noonu/Pretendard-Bold.woff') format('woff'),
+    url('/module/font_noonu/Pretendard-Bold.otf') format('opentype');
 } */

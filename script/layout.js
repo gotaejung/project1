@@ -200,20 +200,18 @@
             $explanation.toggleClass('active');
         });
 
-        //탑버튼
+
+        //업버튼
         var $htmlBody = $('html, body'),
-            $wrapper = $('#wrapper'),
+            $wrapper = $('#header'),
             $upButton = $footer.find('.up_button');
 
         if($upButton.length){
             $upButton.on('click', function(event) {
-                $htmlBody.animate({
-                    scrollTop : $wrapper.offset().top
-                },{
-                    duration : 1000,
-                    easing : 'easeOutExpo'
-                });
                 event.preventDefault();
+                $htmlBody.animate({
+                    scrollTop : 0
+                }, 300);
             });
 
             $window.scroll(function(){
