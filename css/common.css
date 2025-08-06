@@ -116,17 +116,6 @@ textarea {
     font-weight: 300;
 }
 
-input[type=search],
-input[type=text] {
-    -webkit-appearance: none;
-    -webkit-border-radius: 4px;
-}
-
-select {
-    overflow: visible;
-    background-color: transparent;
-}
-
 :after,
 :before {
     display: none;
@@ -288,9 +277,9 @@ ol>li:before {
 button,
 input {
     display: inline-block;
-    overflow: visible margin: 0;
+    overflow: visible; 
+    margin: 0;
     padding: 0;
-    border: 1px solid;
     box-sizing: border-box;
     color: inherit;
     font-size: inherit;
@@ -302,7 +291,6 @@ input {
 
 button {
     overflow: visible;
-    border-color: transparent;
     background-color: transparent;
     cursor: pointer
 }
@@ -337,7 +325,6 @@ input[disabled] {
     padding: 0;
     margin: -1px;
     overflow: hidden;
-    clip: rect(0, 0, 0, 0);
     border: 0;
 }
 
@@ -369,7 +356,6 @@ legend {
     padding: 0;
     overflow: hidden;
     border: 0;
-    clip: rect(0, 0, 0, 0)
 }
 
 .sr-only-focusable:active,
@@ -378,8 +364,6 @@ legend {
     width: auto;
     height: auto;
     margin: 0;
-    overflow: visible;
-    clip: auto
 }
 
 button {
@@ -391,7 +375,6 @@ button {
 [type=reset],
 [type=submit],
 button {
-    background-color: transparent;
     cursor: pointer
 }
 
@@ -480,22 +463,15 @@ img {
     vertical-align: top;
 }
 
-::-webkit-file-upload-button {
-    cursor: pointer;
-}
 
 input {
-    -webkit-appearance: none;
-    -moz-appearance: none;
+
     appearance: none;
     border-radius: 0;
 }
 
 input:disabled {
-    -webkit-appearance: none;
-    -moz-appearance: none;
     appearance: none;
     color: #555555;
-    -webkit-text-fill-color: #555555;
     opacity: 1;
 }

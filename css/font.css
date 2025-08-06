@@ -8,23 +8,3 @@
     font-weight: 400;
     font-style: normal;
 }
-
-/* Pretendard */
-/* @font-face {
-	font-family: 'Pretendard';
-    font-style: normal;
-    font-weight: 400;
-    src: url('/module/font_noonu/Pretendard-Regular.eot');
-    src: url('/module/font_noonu/Pretendard-Regular.eot?#iefix') format('embedded-opentype'),
-    url('/module/font_noonu/Pretendard-Regular.woff') format('woff'),
-    url('/module/font_noonu/Pretendard-Regular.otf') format('opentype');
-}
-@font-face {
-	font-family: 'Pretendard';
-    font-style: bold;
-    font-weight: 700;
-    src: url('/module/font_noonu/Pretendard-Bold.eot');
-    src: url('/module/font_noonu/Pretendard-Bold.eot?#iefix') format('embedded-opentype'),
-    url('/module/font_noonu/Pretendard-Bold.woff') format('woff'),
-    url('/module/font_noonu/Pretendard-Bold.otf') format('opentype');
-} */
